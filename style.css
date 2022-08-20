@@ -1,0 +1,137 @@
+@import url('http://fonts.cdnfonts.com/css/league-spartan');
+
+
+body{
+    background-color: #1c1d25;
+}
+
+.logo{
+    float: left;
+    margin-left: 6%;
+    margin-right: 45%;
+    width: 80px;
+    height: 52px;
+}
+
+.container-nav{
+    width: 95%;
+}
+
+.listaLinks{
+    float: right;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 30px;
+    right: 5%;
+    list-style: none;
+}
+.listaLinks > li{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.linksPagina > a{
+    display: block;
+    position: relative;
+    color: #b0b2c3;
+    font-family: League Spartan, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.enlaces{
+    color: #b0b2c3;
+    font-family: League Spartan, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+a{
+    background-color: transparent;
+    text-decoration: none;
+}
+.logoCentral{
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    margin-left: 10%;
+}
+
+.centro{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    top: 110px;
+}
+.textoCentral{
+    position: absolute;
+    left: 12%;
+    top: 40px;
+}
+#diego{
+    color: white;
+    font-family: League Spartan, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    margin: 0;
+}
+#skills{
+    color: white;
+    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+    top:4px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 2px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.botonAbout{
+    text-align: left;
+}
+
+#boton1{
+    background: linear-gradient(270deg,#f06449,#ef3636);
+    color: white;
+    font-family: League Spartan,Helvetica,Arial,sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 35%;
+    height: 45px;
+    border: 0;
+
+}
+.redes{
+    position: absolute;
+    left: 97%;
+    top: 30%;
+}
+.listaRedes{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.listaRedes > li{
+    padding-top: 20px;
+}
+.imgRedes{
+    width: 25px;
+}
+
+#espadaInuyasha{
+    width: 5%;
+    left: 22%;
+    /* top: %; */
+}
+#espadaMinecraft{
+    width: 2%;
+}
+#picachu{
+    width: 3%;
+}
