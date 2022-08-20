@@ -124,14 +124,68 @@ a{
     width: 25px;
 }
 
-#espadaInuyasha{
-    width: 5%;
-    left: 22%;
-    /* top: %; */
+.imagenes{
+    width: 25px;
+    position: absolute;
 }
-#espadaMinecraft{
-    width: 2%;
+/* TRIANGULOS */
+#triangulo1{
+    left: 92%;
+    top: 13%;
 }
-#picachu{
-    width: 3%;
+#triangulo2{
+    left: 75%;
+    top: 74%;
 }
+#triangulo3{
+    left: 5%;
+    top: 32%;
+}
+
+/* CUADRADOS */
+#cuadrado1{
+    left: 89%;
+    top: 20%;
+}
+#cuadrado2{
+    left: 72.5%;
+    top: 80%;
+}
+#cuadrado3{
+    left: 2.5%;
+    top: 38%;
+}
+
+/* CIRCULOS */
+#circulo1{
+    left: 95%;
+    top: 20%;
+}
+#circulo2{
+    left: 77.5%;
+    top: 80%;
+}
+#circulo3{
+    left: 7%;
+    top: 38%;
+}
+
+/* EQUIS */
+#equis1{
+    left: 92%;
+    top: 27%;
+}
+#equis2{
+    left: 75%;
+    top: 86%;
+}
+#equis3{
+    left: 5%;
+    top: 44%;
+}
+
+
+
+
+
+/* ANIMACIONES */
