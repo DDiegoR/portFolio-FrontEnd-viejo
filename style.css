@@ -3,6 +3,12 @@
 
 body{
     background-color: #1c1d25;
+    margin: 0;
+}
+
+#top{
+    height: 600px;
+    /* margin-bottom: 20px; */
 }
 
 .logo{
@@ -13,9 +19,14 @@ body{
     height: 52px;
 }
 
-.container-nav{
+.navbar{
+    width: 100%;
+    margin-top: 6px;
+}
+.contenedor-nav{
     width: 95%;
 }
+
 
 .listaLinks{
     float: right;
@@ -63,21 +74,26 @@ a{
     position: relative;
     display: inline-block;
     text-align: center;
-    top: 110px;
+    /* top: 110px; */
+    margin-top: 110px;
 }
 .textoCentral{
-    position: absolute;
+    /* position: absolute; */
     left: 12%;
     top: 40px;
 }
 #diego{
+    position: absolute;
     color: white;
     font-family: League Spartan, Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-size: 60px;
     margin: 0;
+    top: 15%;
+    left: 15%;
 }
 #skills{
+    position: absolute;
     color: white;
     font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
     top:4px;
@@ -87,11 +103,14 @@ a{
     text-align: left;
     padding-left: 2px;
     margin-top: 0;
-    margin-bottom: 50px;
+    top: 45%;
+    left: 15%;
 }
 
 .botonAbout{
-    text-align: left;
+    position: absolute;
+    top: 70%;
+    left: 15%;
 }
 
 #boton1{
@@ -101,12 +120,12 @@ a{
     letter-spacing: 3px;
     font-size: 15px;
     font-weight: 400;
-    width: 35%;
+    width: 120%;
     height: 45px;
     border: 0;
 
 }
-.redes{
+/* .redes{
     position: absolute;
     left: 97%;
     top: 30%;
@@ -122,7 +141,37 @@ a{
 }
 .imgRedes{
     width: 25px;
+} */
+
+
+/* REDES SOCIALES FIJAS */
+.social-img{
+    width: 25px;
 }
+.social{
+    position: fixed;
+    left: 93%;
+    top: 30%;
+    z-index: 2000;
+}
+.social ul{
+    list-style: none;
+}
+.social ul li a{
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.social::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 210px;   
+    margin: 0px 70%;
+    background-color:#b0b2c3;
+}
+
+/* IMAGENES ANIMADAS */
 
 .imagenes{
     width: 25px;
@@ -185,7 +234,77 @@ a{
 }
 
 
+#sobreMi{
+    position: absolute;
+    left: 50%;
+    margin-top: 11%;
+    color: white;
+    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
 
+/* MEDIO */
 
+.medio{
+    background-color: white;
+    padding: 100px 50px 0 17%;
+    height: 580px;
+}
+
+h2{
+    display: inline-block;
+    position: relative;
+}
+h2::before{
+    content: "01.";
+    position: absolute;
+    width: 0;
+    background-color: #0379D6;
+    top: 0.4em;
+    left: 10%;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 1px;
+    background-color: #0379D6;
+    top: 0.9em;
+    left: 100%;
+}
+#tituloAbout{
+    font-family: League Spartan,Helvetica,Arial,sans-serif;
+    padding: 10px;
+    padding-left: 65px;
+    color: #0379D6;
+    margin-bottom: 0;
+}
+
+.conteiner-sobreMi{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+#parrafoAbout{
+    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+    max-width: 80%;
+    font-size: 19px;
+    padding: 20px;
+    /* color: #056CBD; */
+}
+
+#img-perfil{
+    margin-top: 40px;
+    width: 60%;
+    border-radius: 40px;
+    border: solid 2px;
+    border-color: #0379D6;
+}
+#logo-perfil{
+    position: absolute;
+    width: 7%;
+    left: 81%;
+    padding-top: 2%;
+}
 
 /* ANIMACIONES */
