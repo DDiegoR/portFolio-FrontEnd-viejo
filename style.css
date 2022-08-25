@@ -4,6 +4,7 @@
 body{
     background-color: #1c1d25;
     margin: 0;
+    counter-reset: contador;
 }
 
 #top{
@@ -246,7 +247,7 @@ a{
 
 /* MEDIO */
 
-.medio{
+.seccion-about{
     background-color: white;
     padding: 100px 50px 0 17%;
     height: 580px;
@@ -256,29 +257,33 @@ h2{
     display: inline-block;
     position: relative;
 }
-h2::before{
-    content: "01.";
-    position: absolute;
-    width: 0;
-    background-color: #0379D6;
-    top: 0.4em;
-    left: 10%;
-}
-h2::after{
-    content: "";
-    position: absolute;
-    width: 330px;
-    height: 1px;
-    background-color: #0379D6;
-    top: 0.9em;
-    left: 100%;
-}
-#tituloAbout{
+
+.titulos-secciones{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 10px 0px 40px;
     font-family: League Spartan,Helvetica,Arial,sans-serif;
-    padding: 10px;
-    padding-left: 65px;
     color: #0379D6;
-    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.titulos-secciones::before{
+    position: relative;
+    counter-increment: contador;
+    content: "0" counter(contador) ".";
+    margin-right: 10px;
+    color: #0379D6;
+}
+.titulos-secciones::after{
+    content: "";
+    display: block;
+    position: relative;
+    margin-left: 20px;
+    height: 1px;
+    width: 315px;
+    background-color: #0379D6;
 }
 
 .conteiner-sobreMi{
@@ -289,8 +294,6 @@ h2::after{
     font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
     max-width: 80%;
     font-size: 19px;
-    padding: 20px;
-    /* color: #056CBD; */
 }
 
 #img-perfil{
@@ -306,5 +309,95 @@ h2::after{
     left: 81%;
     padding-top: 2%;
 }
+
+.seccion-estudios{
+    background-color: #1C1D25;
+    padding: 100px 250px 0 23%;
+    height: 580px;
+}
+
+.caja-estudios{
+    display: flex;
+    color: white;
+    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+    color: #94959C;
+}
+.listado-estudios{
+    position: relative;
+    z-index: 3;
+    width: max-content;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}   
+
+.botonEstudio{
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    padding: 0px 20px 2px;
+    border-left: 2px solid white;
+    color: white;
+    background-color: transparent;
+    text-align: left;
+    white-space: nowrap;
+    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+    font-size: 15px;
+}
+
+button{
+    cursor: pointer;
+    border: 0px;
+}
+
+.contenido-secciones{
+    position: relative;
+    width: 100%;
+    margin-left: 20px;
+}
+#listaEstudio:root{
+    color:#0379D6;
+}
+
+#listaEstudio{
+    list-style: none;
+}
+.bloqueLista{
+    border-left: 1px solid;
+    border-color:#0379D6;
+    width: 75%;
+    padding: 10px;
+
+}
+.tituloEstudio{
+    margin: 0;
+    font-size: 22px;
+    color: white;
+}
+.tituloEstudio a{
+    text-decoration: none;
+    color: #0379D6;
+    
+}
+.subtituloEstudio{
+    margin: 0;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+/*  ESTILOS RELACIONADOS CON LOS EVENTOS DE LOS BOTONES */
+#facultad{
+    display: block;
+}
+#cursoDW{
+    display: none;
+}
+#argentinaPrograma{
+    display: none;
+}
+
 
 /* ANIMACIONES */

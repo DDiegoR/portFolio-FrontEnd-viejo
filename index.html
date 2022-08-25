@@ -15,9 +15,10 @@
         <div class="contenedor-nav">
             <a class="logo" href="#"><img class="logo" src="LogoDR-white.png" alt="logo"></a>
             <ul class="listaLinks">
-                <li><a class="enlaces" href="https://www.youtube.com/">Proyectos</a></li>
+                <li><a class="enlaces" href="#">Sobre Mí</a></li>
                 <li><a class="enlaces" href="https://www.facebook.com">Estudios</a></li>
                 <li><a class="enlaces" href="https://www.twitter.com">Contacto</a></li>
+                <li class="enlaces">Login</li>
             </ul>  
         </div>
     </nav>
@@ -86,14 +87,13 @@
     </header>
 
     <!-- About Me -->
-    <div class="medio">
+    <div class="seccion-about">
         <section>
-            <h2 id="tituloAbout">Sobre Mí</h3>
-                
+            <h2 class="titulos-secciones">Sobre Mí</h2>
                 <div class="conteiner-sobreMi">
                     <div>
                         <p id="parrafoAbout">
-                            !Hola! Mi nombre es Diego y una de las cosas que me gusta mucho es poder dar estilo y diseño a una página web.
+                            !Hola! Mi nombre es Diego, vivo en Corrientes - Argentina y soy Full Stack Developer Jr. Una de las cosas que me gusta mucho es poder dar "vida" a una página web.
                             El desarrollo web me comenzó a llamar la atención en 2020 cuando un amigo me contó sobre eso. Decidí empezar a realizar 
                             cursos de Introducción a Front End, aprendiendo HTML-CSS y un poco de Javascript. A medida que iba creando cosas y practicando, 
                             mi interés hacia el desarrolo web fue creciendo más, realicé otro curso ya de Full Stack en donde pude aprender muchas cosas más 
@@ -116,8 +116,47 @@
         </section>
     </div>
 
+    <!-- ESTUDIOS -->
+    <div class="seccion-estudios">
+        <section>
+            <h2 class="titulos-secciones">Mis Estudios</h2>
+            <div class="caja-estudios">
+                <!-- Listado -->
+                <div class="listado-estudios" role="table">
+                    <button class="botonEstudio" role="tab" onclick="cambiaF()">Universidad</button>
+                    <button class="botonEstudio" role="tab" onclick="cambiaDW()">Curso Diseñador Web</button>
+                    <button class="botonEstudio" role="tab" onclick="cambiaAP()">Full Stack Developer Jr</button>
+                </div>
+                <!-- Contenido -->
+                <div class="contenido-secciones">
+                    <div id="facultad" role="tabpanel">
+                        <h3 class="tituloEstudio">Donde estudio <a href="https://www.frre.utn.edu.ar/">@Facultad</a></h3>
+                        <h5 class="subtituloEstudio">Marzo 2016 - Presente</h5>
+                        <p>
+                            Actualmente estoy estudiando Ingeniería en Sistemas de Información en la Universidad Tecnológia Nacional 
+                            Facultad Regional de Resistencia.
+                        </p>
+                    </div>
+                    <div id="cursoDW" role="tabpanel">
+                        <h3 class="tituloEstudio">Diseñador Web</h3>
+                        <p>
+                            Uno de los cursos que realice fue el de Diseñador Web dictado por el Instituto Educativo Económico Nacional (ien) el cual me 
+                            sirvió mucho para dar mis primero pasos en el gran mundo del FrontEnd.
+                        </p>
+                        <img id="ien-titulo" src="tituloIEN.png" alt="">
+                    </div>
+                    <div id="argentinaPrograma" role="tabpanel">
+                        <h3 class="tituloEstudio">Full Stack Developer Jr</h3>
+                        <p>
+                            Realicé el curso de Full Stack Developer Jr dictado por Argentina Programa... 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
-    <script src="javascripts.js"></script>
+    <script src="javascript.js"></script>
 </body>
 </html>
