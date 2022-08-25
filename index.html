@@ -15,9 +15,9 @@
         <div class="contenedor-nav">
             <a class="logo" href="#"><img class="logo" src="LogoDR-white.png" alt="logo"></a>
             <ul class="listaLinks">
-                <li><a class="enlaces" href="#">Sobre Mí</a></li>
-                <li><a class="enlaces" href="https://www.facebook.com">Estudios</a></li>
-                <li><a class="enlaces" href="https://www.twitter.com">Contacto</a></li>
+                <li><a class="enlaces" href="#seccion-about" onclick="desplazarSobreMi()">Sobre Mí</a></li>
+                <li><a class="enlaces" href="#seccion-estudios" onclick="desplazarEstudios()">Estudios</a></li>
+                <li><a class="enlaces" href="#" onclick="abrirContacto()">Contacto</a></li>
                 <li class="enlaces">Login</li>
             </ul>  
         </div>
@@ -38,22 +38,6 @@
             </div>
             
         </div>
-        <!-- <div class="redes">
-            <ul class="listaRedes">
-                <li>
-                    <a href="https://www.instagram.com/diegoromer9/"><img class="imgRedes" src="instagram.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/romerodiego356"><img class="imgRedes" src="twitter.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://github.com/DDiegoR"><img class="imgRedes" src="github.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/diego-eduardo-romero-700253221"><img class="imgRedes" src="linkedin.png" alt=""></a>
-                </li>
-            </ul>
-        </div> -->
 
         <div class="social">
             <ul>
@@ -80,14 +64,10 @@
             <img class="imagenes" id="equis2" src="equis.png" alt="">
             <img class="imagenes" id="equis3" src="equis.png" alt="">
         </div>
-        <div id="sobreMi">
-            <h3>Sobre Mí</h3> 
-            <img src="" alt="">
-        </div>
     </header>
 
     <!-- About Me -->
-    <div class="seccion-about">
+    <div id="seccion-about">
         <section>
             <h2 class="titulos-secciones">Sobre Mí</h2>
                 <div class="conteiner-sobreMi">
@@ -117,7 +97,7 @@
     </div>
 
     <!-- ESTUDIOS -->
-    <div class="seccion-estudios">
+    <div id="seccion-estudios">
         <section>
             <h2 class="titulos-secciones">Mis Estudios</h2>
             <div class="caja-estudios">
@@ -143,7 +123,7 @@
                             Uno de los cursos que realice fue el de Diseñador Web dictado por el Instituto Educativo Económico Nacional (ien) el cual me 
                             sirvió mucho para dar mis primero pasos en el gran mundo del FrontEnd.
                         </p>
-                        <img id="ien-titulo" src="tituloIEN.png" alt="">
+                        <img src="tituloIEN.png" id="ien-titulo" onclick="cambiarTamanioImagen()" alt="">
                     </div>
                     <div id="argentinaPrograma" role="tabpanel">
                         <h3 class="tituloEstudio">Full Stack Developer Jr</h3>

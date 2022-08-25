@@ -9,7 +9,6 @@ body{
 
 #top{
     height: 600px;
-    /* margin-bottom: 20px; */
 }
 
 .logo{
@@ -75,11 +74,9 @@ a{
     position: relative;
     display: inline-block;
     text-align: center;
-    /* top: 110px; */
     margin-top: 110px;
 }
 .textoCentral{
-    /* position: absolute; */
     left: 12%;
     top: 40px;
 }
@@ -126,24 +123,6 @@ a{
     border: 0;
 
 }
-/* .redes{
-    position: absolute;
-    left: 97%;
-    top: 30%;
-}
-.listaRedes{
-    position: absolute;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.listaRedes > li{
-    padding-top: 20px;
-}
-.imgRedes{
-    width: 25px;
-} */
-
 
 /* REDES SOCIALES FIJAS */
 .social-img{
@@ -235,21 +214,11 @@ a{
 }
 
 
-#sobreMi{
-    position: absolute;
-    left: 50%;
-    margin-top: 11%;
-    color: white;
-    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
-    letter-spacing: 1px;
-    font-size: 15px;
-}
-
 /* MEDIO */
 
-.seccion-about{
+#seccion-about{
     background-color: white;
-    padding: 100px 50px 0 17%;
+    padding: 80px 50px 0 17%;
     height: 580px;
 }
 
@@ -310,7 +279,7 @@ h2{
     padding-top: 2%;
 }
 
-.seccion-estudios{
+#seccion-estudios{
     background-color: #1C1D25;
     padding: 100px 250px 0 23%;
     height: 580px;
@@ -386,6 +355,12 @@ button{
     margin: 0;
     padding-top: 5px;
     font-size: 15px;
+}
+
+#ien-titulo{
+    height: 10%;
+    width: 10%;
+    cursor: pointer;
 }
 
 /*  ESTILOS RELACIONADOS CON LOS EVENTOS DE LOS BOTONES */
