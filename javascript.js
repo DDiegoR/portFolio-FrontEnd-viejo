@@ -1,5 +1,41 @@
 
+// MENU DESPLEGABLE DE BARRA NAVEGACION
+// const btnMenu = document.querySelector("#botonMenu");
+// const menu = document.querySelector("#menuContenedor-nav");
+// let cerrar = document.querySelector("#ham-box-inner");
+// btnMenu.addEventListener("click", function() {
+//     if (menu.style.visibility = "hidden"){
+//         menu.style.visibility = "visible";
+//         menu.style.transform = "translateX(0vw)";
+//         cerrar.style.transform = "rotate(225deg)";
+//         cerrar.classList.add("ham-box-inner-open");
+//     }
+// });
+// btnMenu.addEventListener("click", function(){
+//     if (menu.style.visibility = "visible"){
+//         menu.style.visibility = "hidden";
+//         menu.style.transform = "translateX(100vw)";
+//         cerrar.style.transform = "rotate(0deg)";
+//         cerrar.classList.add("ham-box-inner-close");
+//     }
+// })
 
+function desplegarMenu(){
+    const menu = document.querySelector("#menuContenedorNav");
+    const accion = document.querySelector("#ham-box-inner");
+    if (menu.style.visibility == "hidden"){
+        menu.style.visibility = "visible";
+        menu.style.transform = "translateX(0vw)";
+        accion.style.transform = "rotate(225deg)";
+        accion.classList.add("ham-box-inner-open");
+    }
+    else{
+        menu.style.visibility = "hidden";
+        menu.style.transform = "translateX(100vw)";
+        cerrar.style.transform = "rotate(0deg)";
+        cerrar.classList.add("ham-box-inner-close");
+    }
+}
 
 // EVENTOS BOTONES ESTUDIOS SECCION 2
 function cambiaF(){
