@@ -1,41 +1,37 @@
 
 // MENU DESPLEGABLE DE BARRA NAVEGACION
-// const btnMenu = document.querySelector("#botonMenu");
-// const menu = document.querySelector("#menuContenedor-nav");
-// let cerrar = document.querySelector("#ham-box-inner");
-// btnMenu.addEventListener("click", function() {
-//     if (menu.style.visibility = "hidden"){
-//         menu.style.visibility = "visible";
-//         menu.style.transform = "translateX(0vw)";
-//         cerrar.style.transform = "rotate(225deg)";
-//         cerrar.classList.add("ham-box-inner-open");
-//     }
-// });
-// btnMenu.addEventListener("click", function(){
-//     if (menu.style.visibility = "visible"){
-//         menu.style.visibility = "hidden";
-//         menu.style.transform = "translateX(100vw)";
-//         cerrar.style.transform = "rotate(0deg)";
-//         cerrar.classList.add("ham-box-inner-close");
-//     }
-// })
-
+var mostrar = false;
 function desplegarMenu(){
-    const menu = document.querySelector("#menuContenedorNav");
-    const accion = document.querySelector("#ham-box-inner");
-    if (menu.style.visibility == "hidden"){
+    const menu = document.getElementById("menuContenedorNav");
+    const accion = document.getElementById("ham-box-inner");
+    const seccion = document.getElementById("seccion1");
+    if (mostrar == false){
         menu.style.visibility = "visible";
         menu.style.transform = "translateX(0vw)";
         accion.style.transform = "rotate(225deg)";
         accion.classList.add("ham-box-inner-open");
+        mostrar = true;
     }
-    else{
+    else {
         menu.style.visibility = "hidden";
-        menu.style.transform = "translateX(100vw)";
-        cerrar.style.transform = "rotate(0deg)";
-        cerrar.classList.add("ham-box-inner-close");
+        // menu.style.transform = "translateX(100vw)";
+        accion.style.transform = "rotate(0deg)";
+        accion.classList.remove("ham-box-inner-open");
+        mostrar = false;
+        menu.style.zIndex = 45;
     }
 }
+
+function desplazarSeccionMenu(){
+    const menu = document.getElementById("menuContenedorNav");
+    const accion = document.getElementById("ham-box-inner");
+    menu.style.visibility = "hidden";
+    menu.style.transform = "translateX(100vw)";
+    accion.style.transform = "rotate(0deg)";
+    accion.classList.remove("ham-box-inner-open");
+    mostrar = false;
+}
+// FIN MENU DESPLEGABLE DE BARRA DE NAVEGACION
 
 // EVENTOS BOTONES ESTUDIOS SECCION 2
 function cambiaF(){
@@ -70,3 +66,5 @@ function cambiarTamanioImagen(){
     }
     img.style.transition = "transform 0.25s ease";
 }
+
+document.getElementById("ien-titulo").addEventListener("click", cambiarTamanioImagen);

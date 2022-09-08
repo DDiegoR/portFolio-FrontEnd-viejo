@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Romero - Full Stack Developer Jr</title>
+    <link rel="icon" href="LogoDR-blue.png">
+    <link rel="stylesheet" href="styleSinResponsive.css">
+</head>
+<body>
+    <div id="root">
+        <!-- Barra superior -->
+        <header id="top-header">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#"><img id="logo" src="LogoDR-white.png" alt="logo"></a>
+                </div>
+                <div class="contenedor-nav">
+                    <ol class="listaLinks">
+                        <li><a class="enlaces" href="#seccion-about" onclick="desplazarSobreMi()">Sobre Mí</a></li>
+                        <li><a class="enlaces" href="#seccion-estudios" onclick="desplazarEstudios()">Estudios</a></li>
+                        <li><a class="enlaces" href="#" onclick="abrirContacto()">Contacto</a></li>
+                        <li><a class="enlaces" href="#">Login</a></li>
+                    </ol>  
+                </div>
+                <div class="menuDesplegable">
+                    <div>
+                        <button id="botonMenu" onclick="desplegarMenu()">
+                            <div class="ham-box">
+                                <div id="ham-box-inner" class="ham-box-inner-close">
+                                </div>
+                            </div>
+                        </button>
+                        <aside id="menuContenedorNav">
+                            <nav>
+                                <ol>
+                                    <li><a href="#seccion-about" onclick="desplazarSobreMi()">Sobre Mí</a></li>
+                                    <li><a href="#seccion-estudios" onclick="desplazarEstudios()">Estudios</a></li>
+                                    <li><a href="#" onclick="abrirContacto()">Contacto</a></li>
+                                    <li><a href="#">Login</a></li>
+                                </ol>
+                            </nav>
+                        </aside>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Redes Sociales -->
+        <div class="social">
+            <ul class="social_style">
+                <li><a href="https://www.instagram.com/diegoromer9/" class="icon-instagram"><img class="social-img" src="instagram.png" alt=""></a></li>
+                <li><a href="https://twitter.com/romerodiego356" class="icon-twitter"><img class="social-img" src="twitter.png" alt=""></a></li>
+                <li><a href="https://github.com/DDiegoR" class="icon-github"><img class="social-img" src="github.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/diego-eduardo-romero-700253221" class="icon-linkedin"><img class="social-img" src="linkedin.png" alt=""></a></li>
+            </ul>
+        </div>
+        <!-- Centro -->
+        <main class="contenido_style">
+            <section class="sectionCentro_style">
+                <div class="textoCentral">
+                    <h1 id="diego">Diego Romero</h1>
+                </div>
+
+                <div class="logoCentral">
+                    <img id="logoCentral" src="LogoDR-blueGrande.png" alt="">
+                </div>
+                
+                <div class="texto_rol">
+                    <p id="rol">Full Stack Developer Jr</p>
+                </div>
+                <div class="botonAbout">
+                    <input type="submit" id="boton1" value="Escríbeme">
+                </div>
+            </section>
+            
+            <!-- Imagenes Animaciones -->
+            <div class="imagenesAnimadas">
+                <img class="imagenes" id="triangulo1" src="triangulo.png" alt="">
+                <img class="imagenes" id="triangulo2" src="triangulo.png" alt="">
+                <img class="imagenes" id="triangulo3" src="triangulo.png" alt="">
+                <img class="imagenes" id="circulo1" src="circulo.png" alt="">
+                <img class="imagenes" id="circulo2" src="circulo.png" alt="">
+                <img class="imagenes" id="circulo3" src="circulo.png" alt="">
+                <img class="imagenes" id="cuadrado1" src="cuadrado.png" alt="">
+                <img class="imagenes" id="cuadrado2" src="cuadrado.png" alt="">
+                <img class="imagenes" id="cuadrado3" src="cuadrado.png" alt="">
+                <img class="imagenes" id="equis1" src="equis.png" alt="">
+                <img class="imagenes" id="equis2" src="equis.png" alt="">
+                <img class="imagenes" id="equis3" src="equis.png" alt="">
+            </div>
+
+            <!-- About Me -->
+            <section id="seccion-about">
+                <h2 class="titulos-secciones">Sobre Mí</h2>
+                    <div class="conteiner-sobreMi">
+                        <div class="parrafoAbout">
+                            <p id="parrafoAbout">
+                                !Hola! Mi nombre es Diego, vivo en Corrientes - Argentina y soy Full Stack Developer Jr. Una de las cosas que me gusta mucho es poder dar "vida" a una página web.
+                                El desarrollo web me comenzó a llamar la atención en 2020 cuando un amigo me contó sobre eso. Decidí empezar a realizar 
+                                cursos de Introducción a Front End, aprendiendo HTML-CSS y un poco de Javascript. A medida que iba creando cosas y practicando, 
+                                mi interés hacia el desarrolo web fue creciendo más, realicé otro curso ya de Full Stack en donde pude aprender muchas cosas más 
+                                sobre como crear mi propio sitio web.
+                                Mi enfoque principal es recibirme de la universidad como Ingeniero en Sistemas de Información, pero aún así me gusta mucho trabajar
+                                como Full Stack Developer Jr.
+                                Te dejo mi saludo y gracias por pasarte por mi Portfolio Web!
+                            </p>
+                        </div>
+                        <div class="perfil">
+                            <img id="img-perfil" src="perfil.jpeg" alt="">
+                        </div>
+                    </div>
+                <!-- IMAGENES ANIMADAS -->
+                <div>
+
+                </div>
+            </section>
+
+            <!-- ESTUDIOS -->
+            <section  id="seccion-estudios">
+                <h2 class="titulos-secciones">Mis Estudios</h2>
+                <div class="caja-estudios">
+                    <!-- Listado -->
+                    <div class="listado-estudios" role="table">
+                        <button class="botonEstudio" role="tab" onclick="cambiaF()">Universidad</button>
+                        <button class="botonEstudio" role="tab" onclick="cambiaDW()">Curso Diseñador Web</button>
+                        <button class="botonEstudio" role="tab" onclick="cambiaAP()">Full Stack Developer Jr</button>
+                    </div>
+                    <!-- Contenido -->
+                    <div class="contenido-secciones">
+                        <div id="facultad" role="tabpanel">
+                            <h3 class="tituloEstudio">Donde estudio <a href="https://www.frre.utn.edu.ar/">@Facultad</a></h3>
+                            <h5 class="subtituloEstudio">Marzo 2016 - Presente</h5>
+                            <p>
+                                Actualmente estoy estudiando Ingeniería en Sistemas de Información en la Universidad Tecnológia Nacional 
+                                Facultad Regional de Resistencia.
+                            </p>
+                        </div>
+                        <div id="cursoDW" role="tabpanel">
+                            <h3 class="tituloEstudio">Diseñador Web</h3>
+                            <p>
+                                Uno de los cursos que realice fue el de Diseñador Web dictado por el Instituto Educativo Económico Nacional (ien) el cual me 
+                                sirvió mucho para dar mis primero pasos en el gran mundo del FrontEnd.
+                            </p>
+                            <img src="tituloIEN.png" id="ien-titulo" alt="">
+                        </div>
+                        <div id="argentinaPrograma" role="tabpanel">
+                            <h3 class="tituloEstudio">Full Stack Developer Jr</h3>
+                            <p>
+                                Realicé el curso de Full Stack Developer Jr dictado por Argentina Programa... 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
