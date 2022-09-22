@@ -2,32 +2,39 @@
 // MENU DESPLEGABLE DE BARRA NAVEGACION
 var mostrar = false;
 function desplegarMenu(){
-    const menu = document.getElementById("menuContenedorNav");
+    const menu = document.getElementById("contenidoMenu");
     const accion = document.getElementById("ham-box-inner");
-    const seccion = document.getElementById("seccion1");
+    const seccion = document.getElementById("contenedorCentral");
+    const logo = document.getElementById("logoCentral");
     if (mostrar == false){
         menu.style.visibility = "visible";
         menu.style.transform = "translateX(0vw)";
         accion.style.transform = "rotate(225deg)";
         accion.classList.add("ham-box-inner-open");
+        seccion.style.display = "none";
+        logo.style.display = "none";
         mostrar = true;
     }
     else {
         menu.style.visibility = "hidden";
-        // menu.style.transform = "translateX(100vw)";
+        logo.style.display = "block";
+        seccion.style.display = "block";
         accion.style.transform = "rotate(0deg)";
         accion.classList.remove("ham-box-inner-open");
         mostrar = false;
-        menu.style.zIndex = 45;
     }
 }
 
 function desplazarSeccionMenu(){
-    const menu = document.getElementById("menuContenedorNav");
+    const menu = document.getElementById("contenidoMenu");
     const accion = document.getElementById("ham-box-inner");
+    const seccion = document.getElementById("contenedorCentral");
+    const logo = document.getElementById("logoCentral");
     menu.style.visibility = "hidden";
     menu.style.transform = "translateX(100vw)";
     accion.style.transform = "rotate(0deg)";
+    logo.style.display = "block";
+    seccion.style.display = "block";
     accion.classList.remove("ham-box-inner-open");
     mostrar = false;
 }
