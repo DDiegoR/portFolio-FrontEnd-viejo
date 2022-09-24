@@ -2,6 +2,7 @@
 
 body{
     background-color: #1c1d25;
+    counter-reset: section;
 }
 html, body{
     width: 100%;
@@ -19,38 +20,6 @@ a{
     background-color: transparent;
     text-decoration: none;
 }
-/* REDES SOCIALES FIJAS */
-.social{
-    position: fixed;
-    left: 95%;
-    top: 35%;
-}
-.social_style{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: right;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.social ul li a{
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-}
-.social-img{
-    width: 25px;
-}
-.social::after{
-    content: "";
-    display: block;
-    width: 1px;
-    height: 210px;   
-    margin: 0px 50%;
-    background-color:#b0b2c3;
-}
-/* FIN DE REDES SOCIALES */
 
 /* BARRA DE NAVEGACION */
 .vistaPrincipal{
@@ -70,6 +39,9 @@ a{
     width: 95%;
     margin: 10px 0px 0px;
 }
+.logos{
+    display: flex;
+}
 .logo{
     display: flex;
     justify-content: center;
@@ -82,6 +54,15 @@ a{
 #logo{
     width: 100%;
     height: 90%;
+}
+.arg-programa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#arg-programa{
+    width: 100%;
+    height: 80px;
 }
 .contenedor-nav{
     display: flex;
@@ -238,10 +219,13 @@ a{
     padding: 10px 15px;
 }
 /* FIN MENU DESPLEGABLE */
+/* LOGIN */
+
+/* FIN LOGIN */
 /* FIN BARRA DE NAVEGACION */
 
 /* CONTENIDO CENTRO */
-.container{
+.contenedorCentro{
     width: 100%;
     display: block;
     position: relative;
@@ -290,6 +274,10 @@ a{
 .btn-primary{
     background: linear-gradient(270deg,#f06449,#ef3636);
     border: 0px;
+}
+.btn-success{
+    background: linear-gradient(270deg, #0379D6, #101b3b);
+    color: white;
 }
 /* FIN CONTENIDO CENTRO */
 
@@ -365,8 +353,8 @@ a{
 }
 .titulos-secciones::before{
     position: relative;
-    counter-increment: contador;
-    content: "0" counter(contador) ".";
+    content: "0" counter(section) ".";
+    counter-increment: section 1;
     margin-right: 10px;
     color: #0379D6;
 }
@@ -403,6 +391,7 @@ a{
     font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
     font-size: 19px;
     margin-top: 10px;
+    width: 80%;
 }
 .perfil{
     display: flex;
@@ -414,7 +403,7 @@ a{
 }
 #img-perfil{
     margin-top: 0px;
-    margin-left: 20px;
+    margin-left: 0px;
     width: 70%;
     border-radius: 40px;
     border: solid 2px;
@@ -428,7 +417,7 @@ a{
     padding: 50px 80px 50px 10%;
     margin: 0px auto;
     height: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     max-width: 1000px;
 }
 .caja-estudios{
@@ -515,27 +504,101 @@ button{
 }
 /* FIN SECCION ESTUDIOS */
 
+/* SECCION PROYECTOS */
+.seccion-proyectos{
+    background-color: white; 
+    padding: 50px 10% 50px 10%;
+    margin: 0px auto;
+    height: 100%;
+}
+.caja-proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cajaImagenes {
+    display: flex;
+    /* width: 90vw; */
+    width: 100%;
+}
+.panel {
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 60vh;
+border-radius: 50px;
+color: #fff;
+cursor: pointer;
+flex: 0.5;
+margin: 10px;
+position: relative;
+-webkit-transition: all 700ms ease-in;
+}
+.panel h3 {
+font-size: 24px;
+position: absolute;
+bottom: 20px;
+left: 20px;
+margin: 0;
+opacity: 0;
+}
+.panel.active {
+flex: 5;
+}
+.panel.active h3 {
+opacity: 1;
+transition: opacity 0.3s ease-in 0.4s;
+}
+.cajaTexto{
+    width: 30%;
+}
+
+/* FIN SECCION PROYECTOS */
 
 
-
-@media only screen and (max-width: 1200px){
-
+@media only screen and (max-width: 992px){
+    .listaLinks li{
+        margin: 0px 5px;
+    }
 }
 @media only screen and (max-width: 900px){
     #diego{
         font-size: 56px;
+    }
+    .caja-proyectos{
+        display: block;
+    }
+    .cajaTexto{
+        width: 100%;
+        padding-top: 50px;
+        padding-left: 30px;
     }
 }
 @media only screen and (max-width: 768px){
     .imagenesAnimadas{
         visibility: hidden;
     }
-    .social{
+    #social{
         display: none;
     }
     .contenedor-sobreMi{
         display: block;
     }
+    .barraNavegacion{
+        margin-right: 0px;
+    }
+    /* MENU DESPLEGABLE */
+    .contenedor-nav{
+        display: none;
+    }
+    .menuDesplegable{
+        display: block;
+        /* nuevo */
+        transition-delay: .1s;
+        z-index: 45;
+    }
+    /* FIN MENU DESPLEGABLE */
 }
 @media only screen and (max-width: 700px){
     body{
@@ -560,18 +623,7 @@ button{
     }
 }
 @media only screen and (max-width: 640px){
-    /* MENU DESPLEGABLE */
-    .contenedor-nav{
-        display: none;
-    }
-    .menuDesplegable{
-        display: block;
-
-        /* nuevo */
-        transition-delay: .1s;
-        z-index: 45;
-    }
-    /* FIN MENU DESPLEGABLE */
+    
 }
 @media only screen and (max-width: 576px){
     #logoCentral{
