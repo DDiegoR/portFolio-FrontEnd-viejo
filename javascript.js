@@ -81,12 +81,13 @@ document.getElementById("ien-titulo").addEventListener("click", cambiarTamanioIm
 
 // CAJA IMAGENES 
 const panels = document.querySelectorAll('.panel')
+const titulos = document.querySelectorAll('.tituloProyecto');
 
 panels.forEach(panel => {
     panel.addEventListener('click', () => {
         removeActiveClasses()
         panel.classList.add('active')
-    })
+    })   
 })
 
 function removeActiveClasses() {
@@ -95,3 +96,10 @@ function removeActiveClasses() {
     })
 }
 
+// titulos.forEach(tituloProyecto => {
+//     tituloProyecto.addEventListener('click', () => {
+
+// })
+// }
+
+// FIN CAJA IMAGENES
