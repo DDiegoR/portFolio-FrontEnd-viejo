@@ -26,7 +26,7 @@ a{
     position: relative;
     left: 0;
     top: 0;
-    height: 580px;
+    height: 100vh;
     width: 100%;
     padding: 0px 7%;
     z-index: 25;
@@ -219,18 +219,14 @@ a{
     padding: 10px 15px;
 }
 /* FIN MENU DESPLEGABLE */
-/* LOGIN */
-
-/* FIN LOGIN */
 /* FIN BARRA DE NAVEGACION */
-
 /* CONTENIDO CENTRO */
 .contenedorCentro{
     width: 100%;
     display: block;
     position: relative;
     z-index: 2;
-    height: 580px;
+    height: 680px;
 }
 .contenedorCentral{
     position: absolute;
@@ -242,6 +238,14 @@ a{
 #contenedorCentral{
     padding: 0px 60px;
     margin: 0px auto;
+}
+.saludo{
+    /* display: inline-block; */
+    color: white;
+    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+    font-weight: 600;
+    font-size: 34px;
+    margin: 0;
 }
 .logoCentral{
     position: absolute;
@@ -371,9 +375,11 @@ a{
 
 /* SECCION SOBRE MI */
 .seccion-sobreMi{
-    background-color: white;
-    padding: 50px 20px 50px 10%;
+    padding: 100px 20px 50px 10%;
     height: 100%;
+}
+.seccion-sobreMi .parrafoAbout{
+    color: white;
 }
 .contenedor-sobreMi{
     display: flex;
@@ -413,11 +419,10 @@ a{
 
 /* SECCION ESTUDIOS */
 .seccion-estudios{
-    background-color: #1C1D25; 
     padding: 50px 80px 50px 10%;
     margin: 0px auto;
     height: 100%;
-    min-height: 90vh;
+    min-height: 75vh;
     max-width: 1000px;
 }
 .caja-estudios{
@@ -502,11 +507,35 @@ button{
 #argentinaPrograma{
     display: none;
 }
+
+/* IMAGENES */
+.modal-container.activado{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+.modal-container img{
+    z-index: 100;
+}
+.modal-container.activado::after{
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.70 );
+    z-index: 0;
+}
 /* FIN SECCION ESTUDIOS */
 
 /* SECCION PROYECTOS */
 .seccion-proyectos{
-    background-color: white; 
     padding: 50px 10% 50px 10%;
     margin: 0px auto;
     height: 100%;

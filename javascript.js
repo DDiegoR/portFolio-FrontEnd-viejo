@@ -60,23 +60,6 @@ function cambiaAP(){
 }
 
 
-// EVENTO IMAGEN DISEÑOWEB
-function cambiarTamanioImagen(){
-    var identificador = document.getElementById("ien-titulo");
-    if (identificador.style.width == "10%") {
-        identificador.style.height = "400px";
-        identificador.style.width = "500px";
-    }
-    else {
-        identificador.style.height = "10%";
-        identificador.style.width = "10%";
-    }
-    img.style.transition = "transform 0.25s ease";
-}
-
-document.getElementById("ien-titulo").addEventListener("click", cambiarTamanioImagen);
-
-
 // SECCION PROYECTOS
 
 // CAJA IMAGENES 
@@ -103,3 +86,18 @@ function removeActiveClasses() {
 // }
 
 // FIN CAJA IMAGENES
+
+
+// TITULOS SECCION ESTUDIOS
+document.querySelectorAll(".modal-container img").forEach(el => {
+    el.addEventListener("click", function(ev){
+        ev.stopPropagation();
+        this.parentNode.classList.add("activado");
+    })
+});
+
+document.querySelectorAll(".modal-container").forEach(el => {
+    el.addEventListener("click", function(ev) {
+        this.classList.remove("activado");
+    })
+});

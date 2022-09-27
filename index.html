@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleSocial.css">
+    <link rel="stylesheet" href="styleSkills.css">
     <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
@@ -113,8 +114,20 @@
                 </div>
                 </div>
             </div>
-            </div>
+        </div>
         <!-- FIN CONTACTO -->
+        <!-- MODAL IMAGEN TITULOS -->
+        <div class="modal fade" id="titulo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-container">
+                        <img src="imagenes/tituloIEN.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN MODAL IMAGEN TITULOS -->
+
         <header class="vistaPrincipal">
             <nav class="barraNavegacion">
                 <div class="logos">
@@ -187,7 +200,7 @@
                         </div>
                         <div>
                             <div class="descripcion">
-                                <p id="descripcion">Full Stack Developer Jr</p>
+                                <h3 id="descripcion">Full Stack Developer Jr</h3>
                             </div>
                         </div>    
                         <div>
@@ -267,15 +280,17 @@
                             </p>
                         </div>
                         <div id="cursoDW" role="tabpanel">
-                            <h3 class="tituloEstudio">Diseñador Web</h3>
+                            <h3 class="tituloEstudio">Diseñador Web <a href="http://ien.edu.ar/">@ien</a></h3>
+                            <h5 class="subtituloEstudio">Agosto - Diciembre 2021</h5>
                             <p class="descripcionEstudio">
                                 Uno de los cursos que realice fue el de Diseñador Web dictado por el Instituto Educativo Económico Nacional (ien) el cual me 
                                 sirvió mucho para dar mis primero pasos en el gran mundo del FrontEnd.
                             </p>
-                            <img src="imagenes\tituloIEN.png" id="ien-titulo" alt="">
+                            <a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#titulo" data-bs-whatever="@mdo">Ver certificado</a>
                         </div>
                         <div id="argentinaPrograma" role="tabpanel">
-                            <h3 class="tituloEstudio">Full Stack Developer Jr</h3>
+                            <h3 class="tituloEstudio">Full Stack Developer Jr <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">@Argentina Programa</a></h3>
+                            <h5 class="subtituloEstudio">Febrero 2022 - Enero 2023</h5>
                             <p class="descripcionEstudio">
                                 Realicé el curso de Full Stack Developer Jr dictado por Argentina Programa... 
                             </p>
@@ -285,6 +300,147 @@
             </section>
             <!-- FIN SECCION ESTUDIOS -->
 
+            <!-- SECCION HARD & SOFT SKILLS -->
+            <section class="seccion-skills container">
+                <h1 class="titulo-skills">Mis Skills</h1>
+                <div class="caja-Skills row">
+                    <!-- SKILL HTML -->
+                    <div class="skill col">
+                        <div class="progreso">
+                            <div class="card">
+                                <div class="box">
+                                    <div class="porcent">
+                                        <svg>
+                                            <circle cx="70" cy="70" r="70"/>
+                                            <circle cx="70" cy="70" r="70"/>
+                                        </svg>
+                                        <div class="number">
+                                            <h2>80<span>%</span></h2>
+                                        </div>
+                                        <h3 class="text">HTML</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL CSS -->
+                    <div class="skill col">
+                        <div class="progreso">
+                            <div class="card">
+                                <div class="box">
+                                    <div class="porcent">
+                                        <svg>
+                                            <circle cx="70" cy="70" r="70"/>
+                                            <circle cx="70" cy="70" r="70"/>
+                                        </svg>
+                                        <div class="number">
+                                            <h2>80<span>%</span></h2>
+                                        </div>
+                                        <h3 class="text">CSS</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL JAVASCRIPT -->
+                    <div class="skill col">
+                        <div class="progreso">
+                            <div class="card">
+                                <div class="box">
+                                    <div class="porcent">
+                                        <svg>
+                                            <circle cx="70" cy="70" r="70"/>
+                                            <circle cx="70" cy="70" r="70"/>
+                                        </svg>
+                                        <div class="number">
+                                            <h2>80<span>%</span></h2>
+                                        </div>
+                                        <h3 class="text">JAVASCRIPT</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL ANGULAR -->
+                    <div class="skill col">
+                        <div class="progreso">
+                            <div class="card">
+                                <div class="box">
+                                    <div class="porcent">
+                                        <svg>
+                                            <circle cx="70" cy="70" r="70"/>
+                                            <circle cx="70" cy="70" r="70"/>
+                                        </svg>
+                                        <div class="number">
+                                            <h2>80<span>%</span></h2>
+                                        </div>
+                                        <h3 class="text">ANGULAR</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL MySQL -->
+                    <div class="skill col">
+                        <div class="progreso">
+                            <div class="card">
+                                <div class="box">
+                                    <div class="porcent">
+                                        <svg>
+                                            <circle cx="70" cy="70" r="70"/>
+                                            <circle cx="70" cy="70" r="70"/>
+                                        </svg>
+                                        <div class="number">
+                                            <h2>80<span>%</span></h2>
+                                        </div>
+                                        <h3 class="text">MySQL</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL JAVA -->
+                    <div class="skill col">
+                        <div class="progreso">
+                            <div class="card">
+                                <div class="box">
+                                    <div class="porcent">
+                                        <svg>
+                                            <circle cx="70" cy="70" r="70"/>
+                                            <circle cx="70" cy="70" r="70"/>
+                                        </svg>
+                                        <div class="number">
+                                            <h2>80<span>%</span></h2>
+                                        </div>
+                                        <h3 class="text">JAVA</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SKILL SPRING BOOT -->
+                    <div class="skill col">
+                        <div class="progreso">
+                            <div class="card">
+                                <div class="box">
+                                    <div class="porcent">
+                                        <svg>
+                                            <circle cx="70" cy="70" r="70"/>
+                                            <circle cx="70" cy="70" r="70"/>
+                                        </svg>
+                                        <div class="number">
+                                            <h2>80<span>%</span></h2>
+                                        </div>
+                                        <h3 class="text">Spring Boot</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FIN SECCION HARD & SOFT SKILLS -->
+            
             <!-- SECCION PROYECTOS -->
             <section id="proyectos" class="seccion-proyectos">
                 <h2 class="titulos-secciones">Proyectos</h2>
