@@ -389,11 +389,11 @@ a{
 }
 .parrafoAbout{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     flex: 1;
     width: 100%;
 }
-#parrafoAbout{
+.parrafoAbout p{
     font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
     font-size: 19px;
     margin-top: 10px;
@@ -422,7 +422,7 @@ a{
     padding: 50px 80px 50px 10%;
     margin: 0px auto;
     height: 100%;
-    min-height: 75vh;
+    min-height: 80vh;
     max-width: 1000px;
 }
 .caja-estudios{
@@ -532,6 +532,71 @@ button{
     background-color: rgba(0, 0, 0, 0.70 );
     z-index: 0;
 }
+/* FIN SECCION IMAGENES */
+
+/* SKILLS */
+.titulo-skills{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 10px 0px 40px;
+    font-family: League Spartan,Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    color: #0379D6;
+    white-space: nowrap;
+}
+#html{
+    background-image: url('imagenes/html.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+#css{
+    background-image: url('imagenes/css.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+#javascript{
+    background-image: url('imagenes/javascript.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+#angular{
+    background-image: url('imagenes/angular.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+#mysql{
+    background-image: url('imagenes/mysql.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+#java{
+    background-image: url('imagenes/java.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+#springboot{
+    background-image: url('imagenes/springboot.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+
+/* FIN SKILLS */
 /* FIN SECCION ESTUDIOS */
 
 /* SECCION PROYECTOS */
