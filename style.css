@@ -1,26 +1,26 @@
 @import url('http://fonts.cdnfonts.com/css/league-spartan');
 
+html{
+    height: 100%;
+}
 body{
     background-color: #1c1d25;
     counter-reset: section;
-}
-html, body{
+    min-height: 100%;
     width: 100%;
-    height: 100%;
     margin: 0px;
     padding: 0px;
 }
 .contenedor{
     width: 100%;
     min-width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 a{  
     display: inline-block;
     background-color: transparent;
     text-decoration: none;
 }
-
 /* BARRA DE NAVEGACION */
 .vistaPrincipal{
     position: relative;
@@ -536,69 +536,7 @@ button{
 }
 /* FIN SECCION IMAGENES */
 
-/* SKILLS */
-.titulo-skills{
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    margin: 10px 0px 40px;
-    font-family: League Spartan,Helvetica,Arial,sans-serif;
-    font-size: 30px;
-    color: #0379D6;
-    white-space: nowrap;
-}
-#html{
-    background-image: url('imagenes/html.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-}
-#css{
-    background-image: url('imagenes/css.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-}
-#javascript{
-    background-image: url('imagenes/javascript.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-}
-#angular{
-    background-image: url('imagenes/angular.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-}
-#mysql{
-    background-image: url('imagenes/mysql.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-}
-#java{
-    background-image: url('imagenes/java.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-}
-#springboot{
-    background-image: url('imagenes/springboot.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-}
 
-/* FIN SKILLS */
 /* FIN SECCION ESTUDIOS */
 
 /* SECCION PROYECTOS */
@@ -619,15 +557,18 @@ button{
     display: block;
     width: 80%;
     opacity: 1;
-    height: 480px;
+    height: 100%;
     background-color: #1C1D25;
     position: relative;
     box-shadow: 0 10px 10px 0 rgb(0 0 0 / 45%);
     margin-left: auto;
     margin-right: auto;
     background-position: 50%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+}
+.panel img{
+    width: 100%;
 }
 .tituloPanel{
     position: absolute;
@@ -699,7 +640,7 @@ button{
     }
 }
 @media only screen and (max-width: 900px){
-    #diego{
+    .diego{
         font-size: 56px;
     }
     .caja-proyectos{
@@ -748,7 +689,7 @@ button{
     body{
         min-width: 100%;
     }
-    #diego{
+    .diego{
         font-size: 50px;
     }
 }
@@ -773,7 +714,7 @@ button{
     #logoCentral{
         width: 100%;
     }
-    #diego{
+    .diego{
         font-size: 32px;
     }
 }

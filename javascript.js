@@ -78,29 +78,10 @@ function removeActiveClasses() {
         panel.classList.remove('active')
     })
 }
-
-// titulos.forEach(tituloProyecto => {
-//     tituloProyecto.addEventListener('click', () => {
-
-// })
-// }
-
 // FIN CAJA IMAGENES
 
 
 // TITULOS SECCION ESTUDIOS
-// document.querySelectorAll(".modal-container img").forEach(el => {
-//     el.addEventListener("click", function(ev){
-//         ev.stopPropagation();
-//         this.parentNode.classList.add("activado");
-//     })
-// });
-
-// document.querySelectorAll(".modal-container").forEach(el => {
-//     el.addEventListener("click", function(ev) {
-//         this.classList.remove("activado");
-//     })
-// });
 var imagen = document.getElementById("imagenTitulo");
 var modal = document.getElementById('titulo')
 modal.addEventListener('show.bs.modal', function (event) {
