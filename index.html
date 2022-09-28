@@ -92,26 +92,44 @@
         <div class="modal fade" id="contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                        <input type="text" class="form-control" id="recipient-name">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close pull-right" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-caja col-12">
+                            <div class="modal-contacto col">
+                                <h1>Contacto</h1>
+                                <h3>Diego Eduardo Romero</h3>
+                                <h6>Full Stack Developer Jr</h6>
+                                <p>!Hola! Podés contactarme para algún proyecto o bien solo para hacerme una consulta.</p>
+                                <div class="contacto-iconoSkills">
+                                    <ul class="listaSkills-modal">
+                                        <li><img src="imagenes/html.png" alt=""></li>
+                                        <li><img src="imagenes/css.png" alt=""></li>
+                                        <li><img src="imagenes/javascript.png" alt=""></li>
+                                        <li><img src="imagenes/angular.png" alt=""></li>
+                                        <li><img src="imagenes/mysql.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <p>Trataré de responderte lo antes posible.</p>
+                            </div>
+                            <form class="col">
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Nombre y Apellido:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Correo Electrónico:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Mensaje:</label>
+                                    <textarea class="form-control" id="message-text" rows="6"></textarea>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send message</button>
-                </div>
                 </div>
             </div>
         </div>
@@ -121,7 +139,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-container">
-                        <img src="imagenes/tituloIEN.png" alt="">
+                        <img id="imagenTitulo" src="imagenes/tituloIEN.png" alt="">
                     </div>
                 </div>
             </div>
@@ -195,12 +213,12 @@
                     <div id="contenedorCentral">
                         <div>
                             <div class="titular">
-                                <h1 id="diego">Diego Romero</h1>
+                                <h1 class="diego">Diego Romero</h1>
                             </div>
                         </div>
                         <div>
-                            <div class="descripcion">
-                                <h3 id="descripcion">Full Stack Developer Jr</h3>
+                            <div>
+                                <h3 class="descripcion">Full Stack Developer Jr</h3>
                             </div>
                         </div>    
                         <div>
@@ -287,7 +305,7 @@
                                 Uno de los cursos que realice fue el de Diseñador Web dictado por el Instituto Educativo Económico Nacional (ien) el cual me 
                                 sirvió mucho para dar mis primero pasos en el gran mundo del FrontEnd.
                             </p>
-                            <a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#titulo" data-bs-whatever="@mdo">Ver certificado</a>
+                            <a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#titulo" data-bs-whatever="@ien">Ver certificado</a>
                         </div>
                         <div id="argentinaPrograma" role="tabpanel">
                             <h3 class="tituloEstudio">Full Stack Developer Jr <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">@Argentina Programa</a></h3>
@@ -295,6 +313,7 @@
                             <p class="descripcionEstudio">
                                 Realicé el curso de Full Stack Developer Jr dictado por Argentina Programa... 
                             </p>
+                            <a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#titulo" data-bs-whatever="@ap">Ver certificado</a>
                         </div>
                     </div>
                 </div>

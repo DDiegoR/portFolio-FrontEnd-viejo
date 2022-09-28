@@ -260,7 +260,7 @@ a{
     display: inline-block;
     position: relative;
 }
-#diego{
+.diego{
     display: inline-block;
     color: white;
     font-family: League Spartan, Helvetica, Arial, sans-serif;
@@ -268,7 +268,7 @@ a{
     font-size: 64px;
     margin: 0;
 }
-#descripcion{
+.descripcion{
     color: white;
     font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
     font-size: 20px;
@@ -521,6 +521,8 @@ button{
 }
 .modal-container img{
     z-index: 100;
+    width: 100%;
+    height: 100%;
 }
 .modal-container.activado::after{
     content: '';
@@ -650,8 +652,34 @@ button{
     display: none;
     width: 30%;
 }
-
 /* FIN SECCION PROYECTOS */
+
+/* MODAL */
+.modal-body{
+    height: 100%;
+}
+.modal-caja{
+    display: flex;
+    flex-direction: row;
+}
+.modal-contacto h1, .modal-contacto h3, .modal-contacto h6{
+    color: #0379D6;
+}
+.modal-contacto{
+    padding: 20px 40px;
+}
+.listaSkills-modal{
+    list-style: none;
+}
+.listaSkills-modal li{
+    display: inline;
+    padding-right: 20px;
+}
+.listaSkills-modal li img{
+    width: 40px;
+    height: 40px;
+}
+/* FIN MODAL */
 
 @media only screen and (min-width: 1024px) {
     .listaPanel li:nth-child(odd) .panel{
@@ -707,6 +735,14 @@ button{
         z-index: 45;
     }
     /* FIN MENU DESPLEGABLE */
+    /* CONTACTO */
+    .modal-caja{
+        display: block;
+    }
+    .modal-body{
+        height: 100%;
+    }
+    /* FIN CONTACTO */
 }
 @media only screen and (max-width: 700px){
     body{

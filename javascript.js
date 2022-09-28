@@ -89,15 +89,33 @@ function removeActiveClasses() {
 
 
 // TITULOS SECCION ESTUDIOS
-document.querySelectorAll(".modal-container img").forEach(el => {
-    el.addEventListener("click", function(ev){
-        ev.stopPropagation();
-        this.parentNode.classList.add("activado");
-    })
-});
+// document.querySelectorAll(".modal-container img").forEach(el => {
+//     el.addEventListener("click", function(ev){
+//         ev.stopPropagation();
+//         this.parentNode.classList.add("activado");
+//     })
+// });
 
-document.querySelectorAll(".modal-container").forEach(el => {
-    el.addEventListener("click", function(ev) {
-        this.classList.remove("activado");
-    })
-});
+// document.querySelectorAll(".modal-container").forEach(el => {
+//     el.addEventListener("click", function(ev) {
+//         this.classList.remove("activado");
+//     })
+// });
+var imagen = document.getElementById("imagenTitulo");
+var modal = document.getElementById('titulo')
+modal.addEventListener('show.bs.modal', function (event) {
+    // Botón que activó el modal
+    var a = event.relatedTarget
+    // Extraer información de los atributos data-bs-*
+    var recipient = a.getAttribute('data-bs-whatever')
+    // Si es necesario, puedes iniciar una solicitud AJAX aquí
+    // y luego realiza la actualización en una devolución de llamada.
+    //
+    // Actualizar el contenido del modal.
+    if (recipient == "@ien") {  
+        imagen.src="imagenes/tituloIEN.png";
+    }
+    if (recipient == "@ap"){
+        imagen.src="imagenes/ap.png";
+    }
+})
