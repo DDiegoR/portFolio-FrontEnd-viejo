@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Romero - Full Stack Developer Jr</title>
-    <link rel="icon" href="imagenes\LogoDR-blue.png">
+    <link rel="icon" href="../imagenes/LogoDR-blue.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/styleSocial.css">
@@ -27,31 +27,33 @@
         <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                        <div class="login-box">
-                            <h2>Iniciar Sesión</h2>
-                            <form>
-                                <div class="user-box">
-                                    <input type="email" name="" required="">
-                                    <label>Correo Electrónico</label>
-                                </div>
-                                <div class="user-box">
-                                    <input type="password" name="" required="">
-                                    <label>Contraseña</label>
-                                </div>
-                                <div class="button-form">
-                                    <a id="submit" href="#">
-                                       Ingresar
-                                    </a>
-                                    <div id="register">
-                                        No tienes cuenta?
-                                        <a href="#" data-bs-target="#modalRegistro" data-bs-toggle="modal">
-                                            Registrarse
-                                        </a>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>                    
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                            <label for="InputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                            <label for="InputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="InputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Reming me</label>
+                            </div>
+                            <div class="m-0 row justify-content-center">
+                                <button type="submit" class="btn btn-success col-10">Sign In</button>
+                            </div>
+                            <div class="m-0 row justify-content-center mt-3">
+                                <button type="button" class="btn btn-primary col-10" data-bs-target="#modalRegistro" data-bs-toggle="modal">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- MODAL REGISTRO -->
@@ -59,33 +61,33 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form class="row g-2">
                             <div class="col-md-6">
-                                <label for="validationDefault01" class="form-label">Nombre</label>
+                                <label for="validationDefault01" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="validationDefault01" required>
                             </div>
                             <div class="col-md-6">
-                                <label for="validationDefault02" class="form-label">Apellido</label>
+                                <label for="validationDefault02" class="form-label">Surname</label>
                                 <input type="text" class="form-control" id="validationDefault02" required>
                             </div>
                             <div class="col-12">
-                                <label for="validationDefaultUsername" class="form-label">Correo Electrónico</label>
+                                <label for="validationDefaultUsername" class="form-label">Email</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <label for="validationDefaultPassword" class="form-label">Contraseña</label>
+                                <label for="validationDefaultPassword" class="form-label">Password</label>
                                 <div class="input-group">
                                     <input type="password" class="form-control" id="validationDefaultPassword"  aria-describedby="inputGroupPrepend2" required>
                                 </div>
                             </div>
                             <div class="d-grid col-6 mx-auto mt-3">
-                                <button class="btn btn-primary" type="submit">Registrarme</button>
+                                <button class="btn btn-primary" type="submit">Sign Up</button>
                             </div>
                         </form>
                     </div>
@@ -102,36 +104,36 @@
                         <button type="button" class="btn-close pull-right" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="modal-caja col-12">
                             <div class="modal-contacto col">
-                                <h1>Contacto</h1>
+                                <h1>Contact</h1>
                                 <h3>Diego Eduardo Romero</h3>
                                 <h6>Full Stack Developer Jr</h6>
-                                <p>!Hola! Podés contactarme para algún proyecto o bien solo para hacerme una consulta.</p>
+                                <p>Hello! You can contact me for a project or just to ask me a question.</p>
                                 <div class="contacto-iconoSkills">
                                     <ul class="listaSkills-modal">
-                                        <li><img src="imagenes/html.png" alt=""></li>
-                                        <li><img src="imagenes/css.png" alt=""></li>
-                                        <li><img src="imagenes/javascript.png" alt=""></li>
-                                        <li><img src="imagenes/angular.png" alt=""></li>
-                                        <li><img src="imagenes/mysql.png" alt=""></li>
+                                        <li><img src="../imagenes/html.png" alt=""></li>
+                                        <li><img src="../imagenes/css.png" alt=""></li>
+                                        <li><img src="../imagenes/javascript.png" alt=""></li>
+                                        <li><img src="../imagenes/angular.png" alt=""></li>
+                                        <li><img src="../imagenes/mysql.png" alt=""></li>
                                     </ul>
                                 </div>
-                                <p>Trataré de responderte lo antes posible.</p>
+                                <p>I will try to answer you as soon as possible.</p>
                             </div>
                             <form class="col">
                                 <div class="mb-3">
-                                    <label for="recipient-name" class="col-form-label">Nombre y Apellido:</label>
+                                    <label for="recipient-name" class="col-form-label">Name:</label>
                                     <input type="text" class="form-control" id="recipient-name">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="recipient-name" class="col-form-label">Correo Electrónico:</label>
-                                    <input type="email" class="form-control" id="recipient-name">
+                                    <label for="recipient-name" class="col-form-label">Email:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="message-text" class="col-form-label">Mensaje:</label>
+                                    <label for="message-text" class="col-form-label">Message:</label>
                                     <textarea class="form-control" id="message-text" rows="6"></textarea>
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
                                 </div>
                             </form>
                         </div>
@@ -146,7 +148,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-container">
-                        <img id="imagenTitulo" src="imagenes/tituloIEN.png" alt="">
+                        <img id="imagenTitulo" src="../imagenes/tituloIEN.png" alt="">
                     </div>
                 </div>
             </div>
@@ -158,22 +160,22 @@
             <nav class="barraNavegacion">
                 <div class="logos">
                     <div class="logo">
-                        <a href="#"><img id="logo" src="imagenes\LogoDR-white.png" alt="logo"></a>
+                        <a href="#"><img id="logo" src="../imagenes\LogoDR-white.png" alt="logo"></a>
                     </div>
                     <div class="arg-programa">
-                        <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank"><img id="arg-programa" src="imagenes/APLogo-20-20.png" alt=""></a>
+                        <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank"><img id="arg-programa" src="../imagenes/APLogo-20-20.png" alt=""></a>
                     </div>
                 </div>
                 <div class="contenedor-nav">
                     <ol class="listaLinks">
-                        <li><a class="enlaces" href="#sobreMi">Sobre Mí</a></li>
-                        <li><a class="enlaces" href="#estudios">Estudios</a></li>
-                        <li><a class="enlaces" href="#proyectos">Proyectos</a></li>
-                        <li><a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo">Contacto</a></li>
-                        <li><a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo">Iniciar Sesión</a></li>
+                        <li><a class="enlaces" href="#sobreMi">About Me</a></li>
+                        <li><a class="enlaces" href="#estudios">Studies</a></li>
+                        <li><a class="enlaces" href="#proyectos">Proyects</a></li>
+                        <li><a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo">Contact</a></li>
+                        <li><a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo">Sign In</a></li>
                         <li>
                             <div class="form-check form-switch">
-                                <input class="form-check-input check" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                <input class="form-check-input check" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
                                 <label class="form-check-label idioma" for="flexSwitchCheckDefault">En</label>
                             </div>
                         </li>
@@ -188,16 +190,16 @@
                         </button>
                         <nav id="contenidoMenu">
                             <ul class="linksNav">
-                                <li><a href="#sobreMi" onclick="desplazarSeccionMenu()">Sobre Mí</a></li>
-                                <li><a href="#estudios" onclick="desplazarSeccionMenu()">Estudios</a></li>
-                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo" onclick="desplazarSeccionMenu()">Contacto</a></li>
-                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo" onclick="desplazarSeccionMenu()">Iniciar Sesión</a></li>
+                                <li><a href="#sobreMi" onclick="desplazarSeccionMenu()">About Me</a></li>
+                                <li><a href="#estudios" onclick="desplazarSeccionMenu()">Studies</a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo" onclick="desplazarSeccionMenu()">Contact</a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo" onclick="desplazarSeccionMenu()">Sign In</a></li>
                             </ul>
                             <ul class="socialNavbar">
-                                <li><a href="https://www.instagram.com/diegoromer9/" target="_blank"><img src="imagenes\instaNavbar.png" alt=""></a></li>
-                                <li><a href="https://twitter.com/romerodiego356" target="_blank"><img src="imagenes\tw.png" alt=""></a></li>
-                                <li><a href="https://github.com/DDiegoR" target="_blank"><img src="imagenes\gh.png" alt=""></a></li>
-                                <li><a href="https://www.linkedin.com/in/diego-eduardo-romero-700253221" target="_blank"><img src="imagenes\in.png" alt=""></a></li>
+                                <li><a href="https://www.instagram.com/diegoromer9/" target="_blank"><img src="../imagenes\instaNavbar.png" alt=""></a></li>
+                                <li><a href="https://twitter.com/romerodiego356" target="_blank"><img src="../imagenes\tw.png" alt=""></a></li>
+                                <li><a href="https://github.com/DDiegoR" target="_blank"><img src="../imagenes\gh.png" alt=""></a></li>
+                                <li><a href="https://www.linkedin.com/in/diego-eduardo-romero-700253221" target="_blank"><img src="../imagenes\in.png" alt=""></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -221,6 +223,7 @@
             </div>
             <!-- FIN REDES SOCIALES -->
 
+
             <!-- CENTRO -->
             <div class="contenedorCentro">
                 <div class="contenedorCentral">
@@ -237,34 +240,34 @@
                         </div>    
                         <div>
                             <div class="botonSobreMi">
-                                <a class="btn btn-primary" href="#" role="button">Escribeme</a>
+                                <a class="btn btn-primary" href="#" role="button">Contact me</a>
                             </div>
                         </div>
                     </div>   
                 </div>
                 <div class="logoCentral">
                     <div>
-                        <img src="imagenes\LogoDR-bluegrande.png" id="logoCentral" alt="LogoDR">
+                        <img src="../imagenes\LogoDR-bluegrande.png" id="logoCentral" alt="LogoDR">
                     </div>
                 </div>
             </div>
             <!-- FIN CENTRO -->
         </header>
-        
+
         <!-- IMAGENES ANIMADAS -->
         <div class="imagenesAnimadas">
-            <img class="imagenes" id="triangulo1" src="imagenes\triangulo.png" alt="">
-            <img class="imagenes" id="triangulo2" src="imagenes\triangulo.png" alt="">
-            <img class="imagenes" id="triangulo3" src="imagenes\triangulo.png" alt="">
-            <img class="imagenes" id="circulo1" src="imagenes\circulo.png" alt="">
-            <img class="imagenes" id="circulo2" src="imagenes\circulo.png" alt="">
-            <img class="imagenes" id="circulo3" src="imagenes\circulo.png" alt="">
-            <img class="imagenes" id="cuadrado1" src="imagenes\cuadrado.png" alt="">
-            <img class="imagenes" id="cuadrado2" src="imagenes\cuadrado.png" alt="">
-            <img class="imagenes" id="cuadrado3" src="imagenes\cuadrado.png" alt="">
-            <img class="imagenes" id="equis1" src="imagenes\equis.png" alt="">
-            <img class="imagenes" id="equis2" src="imagenes\equis.png" alt="">
-            <img class="imagenes" id="equis3" src="imagenes\equis.png" alt="">
+            <img class="imagenes" id="triangulo1" src="../imagenes\triangulo.png" alt="">
+            <img class="imagenes" id="triangulo2" src="../imagenes\triangulo.png" alt="">
+            <img class="imagenes" id="triangulo3" src="../imagenes\triangulo.png" alt="">
+            <img class="imagenes" id="circulo1" src="../imagenes\circulo.png" alt="">
+            <img class="imagenes" id="circulo2" src="../imagenes\circulo.png" alt="">
+            <img class="imagenes" id="circulo3" src="../imagenes\circulo.png" alt="">
+            <img class="imagenes" id="cuadrado1" src="../imagenes\cuadrado.png" alt="">
+            <img class="imagenes" id="cuadrado2" src="../imagenes\cuadrado.png" alt="">
+            <img class="imagenes" id="cuadrado3" src="../imagenes\cuadrado.png" alt="">
+            <img class="imagenes" id="equis1" src="../imagenes\equis.png" alt="">
+            <img class="imagenes" id="equis2" src="../imagenes\equis.png" alt="">
+            <img class="imagenes" id="equis3" src="../imagenes\equis.png" alt="">
         </div>
         <!-- FIN IMAGENES ANIMADAS -->
 
@@ -274,24 +277,25 @@
         <main>
             <!-- SOBRE MI -->
             <section id="sobreMi" class="seccion-sobreMi">
-                <h2 class="titulos-secciones especial">Sobre Mí</h2>
+                <h2 class="titulos-secciones especial">About Me</h2>
                 <div class="contenedor-sobreMi">
                     <div class="parrafoAbout">
                         <p>
-                            !Hola! Mi nombre es Diego, vivo en Corrientes - Argentina y soy Full Stack Developer Jr. Una de las cosas que me gusta mucho es poder dar "vida" a una página web.
-                            El desarrollo web me comenzó a llamar la atención en 2020 cuando un amigo me contó sobre eso. Decidí empezar a realizar 
-                            cursos de Introducción a Front End, aprendiendo HTML-CSS y un poco de Javascript. A medida que iba creando cosas y practicando, 
-                            mi interés hacia el desarrolo web fue creciendo más, realicé otro curso ya de Full Stack en donde pude aprender muchas cosas más 
-                            sobre como crear mi propio sitio web.
-                            Mi enfoque principal es recibirme de la universidad como Ingeniero en Sistemas de Información, pero aún así me gusta mucho trabajar
-                            como Full Stack Developer Jr.
+                            Hello! My name is Diego, I live in Corrientes - Argentina, I am a Full Stack Developer Jr. 
+                            One of the things I really like is being able to give "life" to a web page.
+                            Web development started to catch my attention in 2020 when a friend told me about it. 
+                            I decided to start taking introductory courses on Front End, learning HTML-CSS and a bit of Javascript. 
+                            As I was creating things and practicing, my interest in web development grew more,
+                            I took another Full Stack course where I was able to learn many more things about how to create my own website.
+                            My main focus is to graduate from university as an Information Systems Engineer, 
+                            but I still really like working as a Full Stack Developer Jr.
                         </p>
                         <p>
-                            Te mando un saludo y gracias por pasarte por mi Portfolio Web!
+                            I send you a greeting and thanks for stopping by my Web Portfolio!
                         </p>
                     </div>
                     <div class="perfil">
-                        <img id="img-perfil" src="imagenes\perfil2.jpeg" alt="">
+                        <img id="img-perfil" src="../imagenes\perfil2.jpeg" alt="">
                     </div>
                 </div>
             </section>
@@ -299,40 +303,40 @@
 
             <!-- SECCION ESTUDIOS -->
             <section id="estudios" class="seccion-estudios">
-                <h2 class="titulos-secciones">Mis Estudios</h2>
+                <h2 class="titulos-secciones">My Studies</h2>
                 <div class="caja-estudios">
                     <!-- Listado -->
                     <div class="listado-estudios" role="table">
-                        <button class="botonEstudio" role="tab" onclick="cambiaF()">Universidad</button>
-                        <button class="botonEstudio" role="tab" onclick="cambiaDW()">Curso Diseñador Web</button>
+                        <button class="botonEstudio" role="tab" onclick="cambiaF()">University</button>
+                        <button class="botonEstudio" role="tab" onclick="cambiaDW()">Web Designer Course</button>
                         <button class="botonEstudio" role="tab" onclick="cambiaAP()">Full Stack Developer Jr</button>
                     </div>
                     <!-- Contenido -->
                     <div class="contenido-secciones">
                         <div id="facultad" role="tabpanel">
-                            <h3 class="tituloEstudio">Donde estudio <a href="https://www.frre.utn.edu.ar/">@Facultad</a></h3>
-                            <h5 class="subtituloEstudio">Marzo 2016 - Presente</h5>
+                            <h3 class="tituloEstudio">Where I study<a href="https://www.frre.utn.edu.ar/">@faculty</a></h3>
+                            <h5 class="subtituloEstudio">March 2016 - Present</h5>
                             <p class="descripcionEstudio">
-                                Actualmente estoy estudiando Ingeniería en Sistemas de Información en la Universidad Tecnológia Nacional 
-                                Facultad Regional de Resistencia.
+                                I am currently studying Information Systems Engineering at the National Technological University, 
+                                Regional Faculty of Resistance.
                             </p>
                         </div>
                         <div id="cursoDW" role="tabpanel">
-                            <h3 class="tituloEstudio">Diseñador Web <a href="http://ien.edu.ar/">@ien</a></h3>
-                            <h5 class="subtituloEstudio">Agosto - Diciembre 2021</h5>
+                            <h3 class="tituloEstudio">Web Designer <a href="http://ien.edu.ar/">@ien</a></h3>
+                            <h5 class="subtituloEstudio">August - December 2021</h5>
                             <p class="descripcionEstudio">
-                                Uno de los cursos que realice fue el de Diseñador Web dictado por el Instituto Educativo Económico Nacional (ien) el cual me 
-                                sirvió mucho para dar mis primero pasos en el gran mundo del FrontEnd.
+                                This course that I took was that of Web Designer dictated by the National Economic Educational Institute (ien) 
+                                which helped me a lot to take my first steps in the great world of FrontEnd.
                             </p>
-                            <a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#titulo" data-bs-whatever="@ien">Ver certificado</a>
+                            <a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#titulo" data-bs-whatever="@ien">See certificate</a>
                         </div>
                         <div id="argentinaPrograma" role="tabpanel">
                             <h3 class="tituloEstudio">Full Stack Developer Jr <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">@Argentina Programa</a></h3>
-                            <h5 class="subtituloEstudio">Febrero 2022 - Enero 2023</h5>
+                            <h5 class="subtituloEstudio">February 2022 - January 2023</h5>
                             <p class="descripcionEstudio">
-                                Realicé el curso de Full Stack Developer Jr dictado por Argentina Programa... 
+                                I took the Full Stack Developer Jr course taught by Argentina Programa with which I developed this Web Portfolio.
                             </p>
-                            <a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#titulo" data-bs-whatever="@ap">Ver certificado</a>
+                            <a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#titulo" data-bs-whatever="@ap">See certificate</a>
                         </div>
                     </div>
                 </div>
@@ -341,7 +345,7 @@
 
             <!-- SECCION HARD & SOFT SKILLS -->
             <section class="seccion-skills container">
-                <h1 class="titulo-skills">Mis Skills</h1>
+                <h1 class="titulo-skills">My Skills</h1>
                 <div id="carouselExampleControls" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -352,11 +356,11 @@
                         <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="5" aria-label="Slide 6"></button>
                     </div>
                     <div class="carousel-inner">
-                        <!-- Skill HTML -->
+                        <!-- SKILL HTML -->
                         <div class="carousel-item active">
                             <div class="caja-carrusel">
                                 <div class="w-25">
-                                    <img src="imagenes/html.png" class="d-block w-100" alt="...">
+                                    <img src="../imagenes/html.png" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="progreso">
                                     <div class="card">
@@ -376,11 +380,11 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Skill CSS -->
+                        <!-- SKILL CSS -->
                         <div class="carousel-item">
                             <div class="caja-carrusel">
                                 <div class="w-25">
-                                    <img src="imagenes/css.png" class="d-block w-100" alt="...">
+                                    <img src="../imagenes/css.png" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="progreso">
                                     <div class="card">
@@ -400,11 +404,11 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Skill JAVASCRIPT -->
+                        <!-- SKILL JAVASCRIPT -->
                         <div class="carousel-item">
                             <div class="caja-carrusel">
                                 <div class="w-25">
-                                    <img src="imagenes/javascript.png" class="d-block w-100" alt="">
+                                    <img src="../imagenes/javascript.png" class="d-block w-100" alt="">
                                 </div>
                                 <div class="progreso">
                                     <div class="card">
@@ -424,11 +428,11 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Skill ANGULAR -->
+                        <!-- SKILL ANGULAR -->
                         <div class="carousel-item">
                             <div class="caja-carrusel">
                                 <div class="w-25">
-                                    <img src="imagenes/angular.png" class="d-block w-100" alt="">
+                                    <img src="../imagenes/angular.png" class="d-block w-100" alt="">
                                 </div>
                                 <div class="progreso">
                                     <div class="card">
@@ -448,11 +452,11 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Skill JAVA -->
+                        <!-- SKILL JAVA -->
                         <div class="carousel-item">
                             <div class="caja-carrusel">
                                 <div class="w-25">
-                                    <img src="imagenes/java.png" class="d-block w-100" alt="">
+                                    <img src="../imagenes/java.png" class="d-block w-100" alt="">
                                 </div>
                                 <div class="progreso">
                                     <div class="card">
@@ -472,11 +476,11 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Skill MySQL -->
+                        <!-- SKILL MySQL -->
                         <div class="carousel-item">
                             <div class="caja-carrusel">
                                 <div class="w-25">
-                                    <img src="imagenes/mysql.png" class="d-block w-100" alt="">
+                                    <img src="../imagenes/mysql.png" class="d-block w-100" alt="">
                                 </div>
                                 <div class="progreso">
                                     <div class="card">
@@ -496,6 +500,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -511,13 +516,24 @@
             
             <!-- SECCION PROYECTOS -->
             <section id="proyectos" class="seccion-proyectos">
-                <h2 class="titulos-secciones">Proyectos</h2>
+                <h2 class="titulos-secciones">Proyects</h2>
                 <div class="caja-proyectos">
                     <ul class="listaPanel">
                         <li>
                             <div class="panel">
                                 <a href="#">
-                                    <img src="imagenes/portfolio.png" alt="">
+                                    <img src="../imagenes/portfolio.png" alt="">
+                                    <div class="tituloPanel">
+                                        <h3>Web Portfolio</h3>
+                                        <h5>Como empezó mi Portfolio Web</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="panel">
+                                <a href="#">
+                                    <img src="../imagenes/sitioweb.png" alt="">
                                     <div class="tituloPanel">
                                         <h3>Portfolio Web</h3>
                                         <h5>Como empezó mi Portfolio Web</h5>
@@ -528,7 +544,7 @@
                         <li>
                             <div class="panel">
                                 <a href="#">
-                                    <img src="imagenes/sitioweb.png" alt="">
+                                    <img src="../imagenes/Simon.png" alt="">
                                     <div class="tituloPanel">
                                         <h3>Portfolio Web</h3>
                                         <h5>Como empezó mi Portfolio Web</h5>
@@ -539,18 +555,7 @@
                         <li>
                             <div class="panel">
                                 <a href="#">
-                                    <img src="imagenes/Simon.png" alt="">
-                                    <div class="tituloPanel">
-                                        <h3>Portfolio Web</h3>
-                                        <h5>Como empezó mi Portfolio Web</h5>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="panel">
-                                <a href="#">
-                                    <img src="imagenes/aboutGH.png" alt="">
+                                    <img src="../imagenes/aboutGH.png" alt="">
                                     <div class="tituloPanel">
                                         <h3>Portfolio Web</h3>
                                         <h5>Como empezó mi Portfolio Web</h5>
@@ -610,6 +615,6 @@
         <!-- FIN CONTENIDO -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="javascript.js"></script>
+    <script src="../javascript.js"></script>
 </body>
 </html>

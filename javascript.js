@@ -94,9 +94,22 @@ modal.addEventListener('show.bs.modal', function (event) {
     //
     // Actualizar el contenido del modal.
     if (recipient == "@ien") {  
-        imagen.src="imagenes/tituloIEN.png";
+        imagen.src="../imagenes/tituloIEN.png";
     }
     if (recipient == "@ap"){
-        imagen.src="imagenes/ap.png";
+        imagen.src="../imagenes/ap.png";
     }
 })
+
+// CAMBIO DE IDIOMA
+var check = document.querySelector(".check");
+check.addEventListener("click", idioma);
+
+function idioma() {
+    let id = check.checked;
+    if (id == true){
+        location.href = "en/index.html";
+    } else {
+        location.href = "../index.html";
+    }
+}

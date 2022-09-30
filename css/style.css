@@ -21,6 +21,21 @@ a{
     background-color: transparent;
     text-decoration: none;
 }
+/* SCROLL */
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1c1d25;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #b0b2c3;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid;  /* creates padding around scroll thumb */
+  }
+/* FIN SCROLL */
 /* BARRA DE NAVEGACION */
 .vistaPrincipal{
     position: relative;
@@ -85,7 +100,10 @@ a{
     font-weight: 600;
     padding: 10px 0;
 }
-
+.idioma{
+    color: #b0b2c3;
+    font-family: League Spartan, Helvetica, Arial, sans-serif;
+}
 /* MENU DESPLEGABLE */
 .menuDesplegable{
     display: none;
@@ -596,6 +614,8 @@ button{
 /* FIN SECCION PROYECTOS */
 
 /* MODAL */
+
+/* CONTACTO */
 .modal-body{
     height: 100%;
 }
@@ -620,6 +640,95 @@ button{
     width: 40px;
     height: 40px;
 }
+/* FIN CONTACTO */
+
+/* LOGIN */
+.modal{
+    background: #131315;
+    font-family: League Spartan,Helvetica,Arial,sans-serif;
+}
+.login-box {
+    position: absolute;
+    width: 400px;
+    left: 10%;
+    padding: 40px;
+    background: #242026;
+    box-shadow: 0 15px 25px #0379D6;
+    border-radius: 10px;
+}
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #0379D6;
+    text-align: center;
+}
+.login-box .user-box input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label {
+    position: relative;
+    left: 0;
+    top: -70px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -95px;
+    left: 0;
+    color: #0379D6;
+    font-size: 12px;
+}
+#submit {
+    padding: 15px 20px 10px 15px;
+    color: #0379D6;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid #0379D6;
+    margin: auto;
+}
+#submit:hover {
+    background: #0379D6;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0379D6, 0 0 25px #0379D6, 0 0 50px #0379D6, 0 0 100px #0379D6;
+}
+.button-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+#register {
+    font-size: 14px;
+    text-decoration: none;
+    color: #CBBDDB;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+#register a {
+    margin: auto;
+    color: #0379D6;
+    text-decoration: none;
+}
+/* FIN LOGIN */
+
 /* FIN MODAL */
 
 @media only screen and (min-width: 1024px) {
