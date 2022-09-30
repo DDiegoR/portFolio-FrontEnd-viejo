@@ -727,6 +727,31 @@ button{
     color: #0379D6;
     text-decoration: none;
 }
+@media only screen and (max-width: 576px){
+    .login-box{
+        width: 80%;
+    }
+    #submit{
+        padding: 10px 10px 5px 10px;
+        font-size: 10px;
+    }
+    #register{
+        font-size: 8px;
+    }
+    .login-box .user-box input{
+        font-size: 10px
+    }
+    .login-box .user-box label{
+        font-size: 10px;
+        top: -60px;
+    }
+}
+@media only screen and (max-width: 576px){
+    #submit{
+        padding: 10px 10px 5px 5px;
+        font-size: 10px;
+    }
+}
 /* FIN LOGIN */
 
 /* FIN MODAL */
