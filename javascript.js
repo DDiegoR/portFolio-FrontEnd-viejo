@@ -102,14 +102,14 @@ modal.addEventListener('show.bs.modal', function (event) {
 })
 
 // CAMBIO DE IDIOMA
-var check = document.querySelector(".check");
-check.addEventListener("click", idioma);
+// var check = document.querySelector(".check");
+// check.addEventListener("click", idioma);
 
-function idioma() {
-    let id = check.checked;
-    if (id == true){
-        location.href = "en/index.html";
-    } else {
-        location.href = "../index.html";
-    }
-}
+// function idioma() {
+//     let id = check.checked;
+//     if (id == true){
+//         location.href = "en/index.html";
+//     } else {
+//         location.href = "../index.html";
+//     }
+// }
