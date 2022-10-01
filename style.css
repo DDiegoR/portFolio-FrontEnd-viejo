@@ -288,6 +288,7 @@ body::-webkit-scrollbar {
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
+    margin-bottom: 50px;
 }
 .btn-primary{
     background: linear-gradient(270deg,#f06449,#ef3636);
