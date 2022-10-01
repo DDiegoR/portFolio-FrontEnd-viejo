@@ -7,15 +7,23 @@
     <title>Diego Romero - Full Stack Developer Jr</title>
     <link rel="icon" href="imagenes\LogoDR-blue.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!-- CSS GENERAL -->
     <link rel="stylesheet" href="style.css">
+    <!-- CSS SOCIAL -->
     <link rel="stylesheet" href="styleSocial.css">
+    <!-- CSS SKILLS -->
     <link rel="stylesheet" href="styleSkills.css">
+    <!-- CSS ANIMACION BACKGROUND -->
     <link rel="stylesheet" href="styleBackground.css">
+    <!-- CSS MODAL -->
+    <link rel="stylesheet" href="styleModal.css">
+
     <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
     <div class="contenedor">
+        <!-- ANIMACION BACKGROUND -->
         <div class="lines">
             <div class="line"></div>
             <div class="line"></div>
@@ -23,9 +31,10 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
+        <!-- FIN ANIMACION BACKGROUND -->
         <!-- LOGIN -->
         <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modalLogin">
                 <div class="modal-content">
                         <div class="login-box">
                             <h2>Iniciar Sesión</h2>
@@ -57,8 +66,8 @@
         <!-- MODAL REGISTRO -->
         <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
+                <div class="modal-content modalCaja">
+                    <!-- <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -88,7 +97,34 @@
                                 <button class="btn btn-primary" type="submit">Registrarme</button>
                             </div>
                         </form>
+                    </div> -->
+                    <div class="login-box">
+                        <h2>Registrarse</h2>
+                        <form>
+                            <div class="usuario-box col-12">
+                                <div class="user-box col">
+                                    <input type="text" name="" required="">
+                                    <label>Nombre</label>
+                                </div>
+                                <div class="user-box col">
+                                    <input type="text" name="" required="">
+                                    <label>Apellido</label>
+                                </div>
+                            </div>
+                            <div class="user-box">
+                                <input type="email" name="" required="">
+                                <label>Correo Electrónico</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="password" name="" required="">
+                                <label>Contraseña</label>
+                            </div>
+                            <div class="registrarse">
+                                <button type="submit" class="btn btn-primary col-6">Registrarse</button>
+                            </div>
+                        </form>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -97,7 +133,7 @@
         <!-- CONTACTO -->
         <div class="modal fade" id="contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
-                <div class="modal-content">
+                <div class="modal-content modalCaja">
                     <div class="modal-body">
                         <button type="button" class="btn-close pull-right" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="modal-caja col-12">
@@ -154,55 +190,58 @@
         <!-- FIN MODAL IMAGEN TITULOS -->
 
         <!-- VISTA PRINCIPAL -->
-        <header class="vistaPrincipal">
-            <nav class="barraNavegacion">
-                <div class="logos">
-                    <div class="logo">
-                        <a href="#"><img id="logo" src="imagenes\LogoDR-white.png" alt="logo"></a>
-                    </div>
-                    <div class="arg-programa">
-                        <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank"><img id="arg-programa" src="imagenes/APLogo-20-20.png" alt=""></a>
-                    </div>
+        <nav class="barraNavegacion">
+            <div class="logos">
+                <div class="logo">
+                    <a href="#"><img id="logo" src="imagenes\LogoDR-white.png" alt="logo"></a>
                 </div>
-                <div class="contenedor-nav">
-                    <ol class="listaLinks">
-                        <li><a class="enlaces" href="#sobreMi">Sobre Mí</a></li>
-                        <li><a class="enlaces" href="#estudios">Estudios</a></li>
-                        <li><a class="enlaces" href="#proyectos">Proyectos</a></li>
-                        <li><a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo">Contacto</a></li>
-                        <li><a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo">Iniciar Sesión</a></li>
-                        <li>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input check" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                <label class="form-check-label idioma" for="flexSwitchCheckDefault">En</label>
-                            </div>
-                        </li>
-                    </ol>  
+                <div class="arg-programa">
+                    <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank"><img id="arg-programa" src="imagenes/APLogo-20-20.png" alt=""></a>
                 </div>
-                <div class="menuDesplegable">
-                    <div>
-                        <button id="botonMenu" onclick="desplegarMenu()">
-                            <div class="ham-box">
-                                <div id="ham-box-inner" class="ham-box-inner-close"></div>
-                            </div>
-                        </button>
-                        <nav id="contenidoMenu">
-                            <ul class="linksNav">
-                                <li><a href="#sobreMi" onclick="desplazarSeccionMenu()">Sobre Mí</a></li>
-                                <li><a href="#estudios" onclick="desplazarSeccionMenu()">Estudios</a></li>
-                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo" onclick="desplazarSeccionMenu()">Contacto</a></li>
-                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo" onclick="desplazarSeccionMenu()">Iniciar Sesión</a></li>
-                            </ul>
-                            <ul class="socialNavbar">
-                                <li><a href="https://www.instagram.com/diegoromer9/" target="_blank"><img src="imagenes\instaNavbar.png" alt=""></a></li>
-                                <li><a href="https://twitter.com/romerodiego356" target="_blank"><img src="imagenes\tw.png" alt=""></a></li>
-                                <li><a href="https://github.com/DDiegoR" target="_blank"><img src="imagenes\gh.png" alt=""></a></li>
-                                <li><a href="https://www.linkedin.com/in/diego-eduardo-romero-700253221" target="_blank"><img src="imagenes\in.png" alt=""></a></li>
-                            </ul>
-                        </nav>
-                    </div>
+            </div>
+            <div class="contenedor-nav">
+                <ol class="listaLinks">
+                    <li><a class="enlaces" href="#sobreMi">Sobre Mí</a></li>
+                    <li><a class="enlaces" href="#estudios">Estudios</a></li>
+                    <li><a class="enlaces" href="#proyectos">Proyectos</a></li>
+                    <li><a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo">Contacto</a></li>
+                    <li><a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo">Iniciar Sesión</a></li>
+                    <li>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input check" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label idioma" for="flexSwitchCheckDefault">En</label>
+                        </div>
+                    </li>
+                </ol>  
+            </div>
+            <div class="menuDesplegable">
+                <div>
+                    <button id="botonMenu" onclick="desplegarMenu()">
+                        <div class="ham-box">
+                            <div id="ham-box-inner" class="ham-box-inner-close"></div>
+                        </div>
+                    </button>
+                    <nav id="contenidoMenu">
+                        <ul class="linksNav">
+                            <li><a href="#sobreMi" onclick="desplazarSeccionMenu()">Sobre Mí</a></li>
+                            <li><a href="#estudios" onclick="desplazarSeccionMenu()">Estudios</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo" onclick="desplazarSeccionMenu()">Contacto</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo" onclick="desplazarSeccionMenu()">Iniciar Sesión</a></li>
+                        </ul>
+                        <ul class="socialNavbar">
+                            <li><a href="https://www.instagram.com/diegoromer9/" target="_blank"><img src="imagenes\instaNavbar.png" alt=""></a></li>
+                            <li><a href="https://twitter.com/romerodiego356" target="_blank"><img src="imagenes\tw.png" alt=""></a></li>
+                            <li><a href="https://github.com/DDiegoR" target="_blank"><img src="imagenes\gh.png" alt=""></a></li>
+                            <li><a href="https://www.linkedin.com/in/diego-eduardo-romero-700253221" target="_blank"><img src="imagenes\in.png" alt=""></a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </nav>
+            </div>
+        </nav>
+        <header class="vistaPrincipal">   
+            <!-- BARRA NAV -->
+            
+            <!-- BARRA NAV -->
 
             <!-- REDES SOCIALES -->
             <div id="social" class="social">
@@ -237,7 +276,7 @@
                         </div>    
                         <div>
                             <div class="botonSobreMi">
-                                <a class="btn btn-primary" href="#" role="button">Escribeme</a>
+                                <a class="btn btn-primary" href="#" role="button" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo">Escribeme</a>
                             </div>
                         </div>
                     </div>   
@@ -355,8 +394,8 @@
                         <!-- Skill HTML -->
                         <div class="carousel-item active">
                             <div class="caja-carrusel">
-                                <div class="w-25">
-                                    <img src="imagenes/html.png" class="d-block w-100" alt="...">
+                                <div class="imagenSkills">
+                                    <img src="imagenes/html.png" class="d-block" alt="...">
                                 </div>
                                 <div class="progreso">
                                     <div class="card">
@@ -379,8 +418,8 @@
                         <!-- Skill CSS -->
                         <div class="carousel-item">
                             <div class="caja-carrusel">
-                                <div class="w-25">
-                                    <img src="imagenes/css.png" class="d-block w-100" alt="...">
+                                <div class="imagenSkills">
+                                    <img src="imagenes/css.png" class="d-block" alt="...">
                                 </div>
                                 <div class="progreso">
                                     <div class="card">
@@ -391,7 +430,7 @@
                                                     <circle cx="70" cy="70" r="70"/>
                                                 </svg>
                                                 <div class="number">
-                                                    <h2>80<span>%</span></h2>
+                                                    <h2>70<span>%</span></h2>
                                                 </div>
                                                 <h3 class="text">CSS</h3>
                                             </div>
@@ -403,8 +442,8 @@
                         <!-- Skill JAVASCRIPT -->
                         <div class="carousel-item">
                             <div class="caja-carrusel">
-                                <div class="w-25">
-                                    <img src="imagenes/javascript.png" class="d-block w-100" alt="">
+                                <div class="imagenSkills">
+                                    <img src="imagenes/javascript.png" class="d-block" alt="">
                                 </div>
                                 <div class="progreso">
                                     <div class="card">
@@ -415,7 +454,7 @@
                                                     <circle cx="70" cy="70" r="70"/>
                                                 </svg>
                                                 <div class="number">
-                                                    <h2>80<span>%</span></h2>
+                                                    <h2>50<span>%</span></h2>
                                                 </div>
                                                 <h3 class="text">JAVASCRIPT</h3>
                                             </div>
@@ -427,8 +466,8 @@
                         <!-- Skill ANGULAR -->
                         <div class="carousel-item">
                             <div class="caja-carrusel">
-                                <div class="w-25">
-                                    <img src="imagenes/angular.png" class="d-block w-100" alt="">
+                                <div class="imagenSkills">
+                                    <img src="imagenes/angular.png" class="d-block" alt="">
                                 </div>
                                 <div class="progreso">
                                     <div class="card">
@@ -439,7 +478,7 @@
                                                     <circle cx="70" cy="70" r="70"/>
                                                 </svg>
                                                 <div class="number">
-                                                    <h2>80<span>%</span></h2>
+                                                    <h2>50<span>%</span></h2>
                                                 </div>
                                                 <h3 class="text">ANGULAR</h3>
                                             </div>
@@ -451,8 +490,8 @@
                         <!-- Skill JAVA -->
                         <div class="carousel-item">
                             <div class="caja-carrusel">
-                                <div class="w-25">
-                                    <img src="imagenes/java.png" class="d-block w-100" alt="">
+                                <div class="imagenSkills">
+                                    <img src="imagenes/java.png" class="d-block" alt="">
                                 </div>
                                 <div class="progreso">
                                     <div class="card">
@@ -463,7 +502,7 @@
                                                     <circle cx="70" cy="70" r="70"/>
                                                 </svg>
                                                 <div class="number">
-                                                    <h2>80<span>%</span></h2>
+                                                    <h2>10<span>%</span></h2>
                                                 </div>
                                                 <h3 class="text">JAVA</h3>
                                             </div>
@@ -475,8 +514,8 @@
                         <!-- Skill MySQL -->
                         <div class="carousel-item">
                             <div class="caja-carrusel">
-                                <div class="w-25">
-                                    <img src="imagenes/mysql.png" class="d-block w-100" alt="">
+                                <div class="imagenSkills">
+                                    <img src="imagenes/mysql.png" class="d-block" alt="">
                                 </div>
                                 <div class="progreso">
                                     <div class="card">
@@ -487,7 +526,7 @@
                                                     <circle cx="70" cy="70" r="70"/>
                                                 </svg>
                                                 <div class="number">
-                                                    <h2>80<span>%</span></h2>
+                                                    <h2>50<span>%</span></h2>
                                                 </div>
                                                 <h3 class="text">MySQL</h3>
                                             </div>

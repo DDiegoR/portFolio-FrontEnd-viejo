@@ -36,6 +36,7 @@ body::-webkit-scrollbar {
     border: 3px solid;  /* creates padding around scroll thumb */
   }
 /* FIN SCROLL */
+
 /* BARRA DE NAVEGACION */
 .vistaPrincipal{
     position: relative;
@@ -50,9 +51,11 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    width: 95%;
-    margin: 10px 0px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 5px 5% 0px;
+    background-color: #1c1d25;
 }
 .logos{
     display: flex;
@@ -238,6 +241,7 @@ body::-webkit-scrollbar {
 }
 /* FIN MENU DESPLEGABLE */
 /* FIN BARRA DE NAVEGACION */
+
 /* CONTENIDO CENTRO */
 .contenedorCentro{
     width: 100%;
@@ -248,7 +252,7 @@ body::-webkit-scrollbar {
 }
 .contenedorCentral{
     position: absolute;
-    top: 22%;
+    top: 30%;
     left: 0%;
     width: 100%;
     z-index: 7;
@@ -257,17 +261,9 @@ body::-webkit-scrollbar {
     padding: 0px 60px;
     margin: 0px auto;
 }
-.saludo{
-    /* display: inline-block; */
-    color: white;
-    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
-    font-weight: 600;
-    font-size: 34px;
-    margin: 0;
-}
 .logoCentral{
     position: absolute;
-    top: 15%;
+    top: 23%;
     left: 35%;
     z-index: 3;
 }
@@ -437,7 +433,7 @@ body::-webkit-scrollbar {
 
 /* SECCION ESTUDIOS */
 .seccion-estudios{
-    padding: 50px 80px 50px 10%;
+    padding: 100px 80px 50px 10%;
     margin: 0px auto;
     height: 100%;
     min-height: 80vh;
@@ -525,41 +521,11 @@ button{
 #argentinaPrograma{
     display: none;
 }
-
-/* IMAGENES */
-.modal-container.activado{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-}
-.modal-container img{
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-}
-.modal-container.activado::after{
-    content: '';
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.70 );
-    z-index: 0;
-}
-/* FIN SECCION IMAGENES */
-
-
 /* FIN SECCION ESTUDIOS */
 
 /* SECCION PROYECTOS */
 .seccion-proyectos{
-    padding: 50px 10% 50px 10%;
+    padding: 100px 10% 50px 10%;
     margin: 0px auto;
     height: 100%;
 }
@@ -613,149 +579,6 @@ button{
 }
 /* FIN SECCION PROYECTOS */
 
-/* MODAL */
-
-/* CONTACTO */
-.modal-body{
-    height: 100%;
-}
-.modal-caja{
-    display: flex;
-    flex-direction: row;
-}
-.modal-contacto h1, .modal-contacto h3, .modal-contacto h6{
-    color: #0379D6;
-}
-.modal-contacto{
-    padding: 20px 40px;
-}
-.listaSkills-modal{
-    list-style: none;
-}
-.listaSkills-modal li{
-    display: inline;
-    padding-right: 20px;
-}
-.listaSkills-modal li img{
-    width: 40px;
-    height: 40px;
-}
-/* FIN CONTACTO */
-
-/* LOGIN */
-.modal{
-    background: #131315;
-    font-family: League Spartan,Helvetica,Arial,sans-serif;
-}
-.login-box {
-    position: absolute;
-    width: 400px;
-    left: 10%;
-    padding: 40px;
-    background: #242026;
-    box-shadow: 0 15px 25px #0379D6;
-    border-radius: 10px;
-}
-.login-box h2 {
-    margin: 0 0 30px;
-    padding: 0;
-    color: #0379D6;
-    text-align: center;
-}
-.login-box .user-box input {
-    position: relative;
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-}
-.login-box .user-box label {
-    position: relative;
-    left: 0;
-    top: -70px;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-}
-.login-box .user-box input:focus~label,
-.login-box .user-box input:valid~label {
-    top: -95px;
-    left: 0;
-    color: #0379D6;
-    font-size: 12px;
-}
-#submit {
-    padding: 15px 20px 10px 15px;
-    color: #0379D6;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    letter-spacing: 4px;
-    border: 1px solid #0379D6;
-    margin: auto;
-}
-#submit:hover {
-    background: #0379D6;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #0379D6, 0 0 25px #0379D6, 0 0 50px #0379D6, 0 0 100px #0379D6;
-}
-.button-form {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-#register {
-    font-size: 14px;
-    text-decoration: none;
-    color: #CBBDDB;
-    margin: auto;
-    width: 60%;
-    text-align: center;
-}
-#register a {
-    margin: auto;
-    color: #0379D6;
-    text-decoration: none;
-}
-@media only screen and (max-width: 576px){
-    .login-box{
-        width: 80%;
-    }
-    #submit{
-        padding: 10px 10px 5px 10px;
-        font-size: 10px;
-    }
-    #register{
-        font-size: 8px;
-    }
-    .login-box .user-box input{
-        font-size: 10px
-    }
-    .login-box .user-box label{
-        font-size: 10px;
-        top: -60px;
-    }
-}
-@media only screen and (max-width: 576px){
-    #submit{
-        padding: 10px 10px 5px 5px;
-        font-size: 10px;
-    }
-}
-/* FIN LOGIN */
-
-/* FIN MODAL */
-
 @media only screen and (min-width: 1024px) {
     .listaPanel li:nth-child(odd) .panel{
         transform: translate(25px);
@@ -767,10 +590,16 @@ button{
         opacity: 1;
         transform: scale(1) translateY(0);
     }
+    
+}
+@media only screen and (max-width: 1024px){
+    .barraNavegacion{
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width: 992px){
     .listaLinks li{
-        margin: 0px 5px;
+        margin: 0px 15px;
     }
 }
 @media only screen and (max-width: 900px){
@@ -785,6 +614,17 @@ button{
         padding-top: 50px;
         padding-left: 30px;
     }
+    /* MENU DESPLEGABLE */
+    .contenedor-nav{
+        display: none;
+    }
+    .menuDesplegable{
+        display: block;
+        /* nuevo */
+        transition-delay: .1s;
+        z-index: 45;
+    }
+    /* FIN MENU DESPLEGABLE */
 }
 @media only screen and (max-width: 768px){
     .imagenesAnimadas{
@@ -799,17 +639,7 @@ button{
     .barraNavegacion{
         margin-right: 0px;
     }
-    /* MENU DESPLEGABLE */
-    .contenedor-nav{
-        display: none;
-    }
-    .menuDesplegable{
-        display: block;
-        /* nuevo */
-        transition-delay: .1s;
-        z-index: 45;
-    }
-    /* FIN MENU DESPLEGABLE */
+    
     /* CONTACTO */
     .modal-caja{
         display: block;
@@ -850,6 +680,12 @@ button{
     }
     .diego{
         font-size: 32px;
+    }
+    .linksNav li{
+        margin: 15px 0px;
+    }
+    .linksNav a{
+        font-size: 27px !important;
     }
 }
 @media only screen and (max-width: 360px){

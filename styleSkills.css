@@ -16,6 +16,9 @@
     box-sizing: border-box;
     font-family: League Spartan, Helvetica, Arial, sans-serif;
 }
+.imagenSkills img{
+    width: 50%;
+}
 .carousel-inner{
     overflow: visible;
 }
@@ -26,7 +29,7 @@
 }
 .progreso .card{
     position: relative;
-    width: 100%;
+    width: 40%;
     background-color: rgba(0,0,0,0.5);
     background-color: transparent;
     display: flex;
@@ -80,17 +83,14 @@
     transition: 0.5s;
 }
 .card:hover .porcent .number h2{
-    /* color: rgb(0,0,0); */
     color: #0379D6;
     font-size: 53px;
 }
 .porcent .number h2 span{
-    /* color: rgb(0,0,0); */
     color: #0379D6;
 }
 .text{
     position: relative;
-    /* color: rgb(0,0,0); */
     color: #0379D6;
     margin-top: 20px;
     font-weight: 700;
@@ -131,19 +131,36 @@ svg circle:nth-child(2){
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
 }
-.card:nth-child(1) svg circle:nth-child(2){
+/* HTML */
+.carousel-item:nth-child(1) .card svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440 * 80)/100);
     stroke: #0379D6;
 }
-.card:nth-child(2) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 30)/100);
+/* CSS */
+.carousel-item:nth-child(2) .card svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 70)/100);
     stroke: #0379D6;
 }
-.card:nth-child(3) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 60)/100);
+/* JAVASCRIPT */
+.carousel-item:nth-child(3) .card svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 50)/100);
     stroke: #0379D6;
 }
-
+/* ANGULAR */
+.carousel-item:nth-child(4) .card svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 50)/100);
+    stroke: #0379D6;
+}
+/* JAVA */
+.carousel-item:nth-child(5) .card svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 10)/100);
+    stroke: #0379D6;
+}
+/* MySQL */
+.carousel-item:nth-child(6) .card svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 50)/100);
+    stroke: #0379D6;
+}
 
 
 @media screen and(max-width: 1068px){
@@ -168,18 +185,27 @@ svg circle:nth-child(2){
         margin-top: 20px;
     }
 }
-@media only screen and (max-width:600px)
-{
-    .skill{
-        height: auto;
-        margin-left: 30px;
-        flex-flow: row wrap;
+@media only screen and (max-width:600px){   
+    .carousel{
+        height: 100%;
+        min-height: 80vh;
+    }
+    .carousel-indicators {
+        margin-top: 40px;
     }
     .caja-carrusel{
         flex-direction: column;
         padding: 0;
     }
+    .imagenSkills img{
+        width: 150px;
+        margin-left: auto;
+    }
+    .progreso{
+        justify-content: center;
+    }
+    .porcent{
+        margin-top: 20px;
+    }
 } 
-
-
 /* FIN SECCION SKILLS */
