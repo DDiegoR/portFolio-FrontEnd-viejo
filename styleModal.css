@@ -77,6 +77,14 @@
     width: 40px;
     height: 40px;
 }
+.btn-close{
+    border-color: #fff;
+}
+@media only screen and (max-width: 576px){
+    .modal-caja{
+        display: block;
+    }
+}
 /* FIN CONTACTO */
 
 /* LOGIN - REGISTRO */
@@ -183,27 +191,22 @@
         width: 80%;
     }
     #submit{
-        padding: 10px 10px 5px 10px;
-        font-size: 10px;
+        padding: 10px 10px 5px 15px;
+        font-size: 16px;
     }
     #register{
-        font-size: 8px;
+        font-size: 14px;
+        margin: 0;
+    }
+    .login-box .usuario-box{
+        display: block;
     }
     .login-box .user-box input{
         font-size: 10px
     }
     .login-box .user-box label{
-        font-size: 10px;
+        font-size: 18px;
         top: -60px;
-    }
-}
-@media only screen and (max-width: 576px){
-    #submit{
-        padding: 10px 10px 5px 5px;
-        font-size: 10px;
-    }
-    .login-box .usuario-box{
-        display: block;
     }
 }
 /* FIN LOGIN-REGISTRO */

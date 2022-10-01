@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/league-spartan');
+
 
 html{
     height: 100%;
@@ -10,6 +10,7 @@ body{
     width: 100%;
     margin: 0px;
     padding: 0px;
+    font-family: 'League Spartan', sans-serif;
 }
 .contenedor{
     width: 100%;
@@ -101,6 +102,7 @@ body::-webkit-scrollbar {
     color: #b0b2c3;
     font-family: League Spartan, Helvetica, Arial, sans-serif;
     font-weight: 600;
+    font-size: 20px;
     padding: 10px 0;
 }
 .idioma{
@@ -278,8 +280,8 @@ body::-webkit-scrollbar {
     display: inline-block;
     color: white;
     font-family: League Spartan, Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    font-size: 64px;
+    font-weight: 700;
+    font-size: 80px;
     margin: 0;
 }
 .descripcion{
@@ -594,18 +596,18 @@ button{
     
 }
 @media only screen and (max-width: 1024px){
-    .barraNavegacion{
-        font-size: 14px;
+    .barraNavegacion a{
+        font-size: 18px;
     }
 }
 @media only screen and (max-width: 992px){
     .listaLinks li{
-        margin: 0px 15px;
+        margin: 0px 10px;
     }
 }
 @media only screen and (max-width: 900px){
     .diego{
-        font-size: 56px;
+        font-size: 72px;
     }
     .caja-proyectos{
         display: block;
@@ -655,18 +657,19 @@ button{
         min-width: 100%;
     }
     .diego{
-        font-size: 50px;
+        font-size: 64px;
     }
 }
 @media only screen and (max-width: 600px){
     .caja-estudios {
         display: block;
+        padding-right: 0px;
     }
 
     .listado-estudios{
         display: flex;
         overflow-x: auto;
-        width: calc(100% + 200px);
+        width: calc(100% + 75px);
         padding-left: 50px;
         margin-left: -50px;
         margin-bottom: 30px;
@@ -680,13 +683,16 @@ button{
         width: 100%;
     }
     .diego{
-        font-size: 32px;
+        font-size: 28px;
     }
     .linksNav li{
         margin: 15px 0px;
     }
     .linksNav a{
         font-size: 27px !important;
+    }
+    .descripcion{
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 360px){
