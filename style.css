@@ -480,6 +480,7 @@ button{
 .contenido-secciones{
     position: relative;
     width: 100%;
+    min-height: 40vh;
     margin-left: 20px;
 }
 .tituloEstudio{
@@ -557,15 +558,6 @@ button{
 .panel img{
     width: 100%;
 }
-.tituloPanel{
-    position: absolute;
-    left: 90px;
-    bottom: 50px;
-    color: #0379D6;
-    z-index: 10;
-    max-width: 550px;
-    transition: transform .45s,opacity .25s,-webkit-transform .45s;
-}
 .listaPanel li:nth-child(even) .panel .tituloPanel{
     left: auto;
     text-align: right;
@@ -577,8 +569,15 @@ button{
     left: 20%;
 }
 .cajaTexto{
-    display: none;
-    width: 30%;
+    width: 100%;
+}
+.cajaTexto h2{
+    padding: 20px 20px 0px;
+}
+.cajaTexto p, .cajaTexto h6{
+    padding: 0 40px;
+    font-size: 20px;
+    color: white;
 }
 /* FIN SECCION PROYECTOS */
 

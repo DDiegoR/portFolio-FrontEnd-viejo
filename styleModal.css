@@ -38,15 +38,15 @@
 /* CONTACTO */
 .modalCaja{
     background: #242026;
-    box-shadow: 0 15px 25px #0379D6;
+    box-shadow: 5px 5px 35px #0379D6;
     border-radius: 10px;
-}
-.modal-body{
-    height: 100%;
 }
 .modal-caja{
     display: flex;
     flex-direction: row;
+}
+.modal-body{
+    height: 100%;
 }
 .modal-contacto h1, .modal-contacto p{
     color: #fff;
@@ -87,7 +87,6 @@
 
 /* LOGIN - REGISTRO */
 .modal{
-    background: #131315;
     font-family: League Spartan,Helvetica,Arial,sans-serif;
 }
 .modalLogin{
@@ -99,7 +98,7 @@
     left: 10%;
     padding: 40px;
     background: #242026;
-    box-shadow: 0 15px 25px #0379D6;
+    box-shadow: 0 5px 25px #0379D6;
     border-radius: 10px;
 }
 .login-box h2 {

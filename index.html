@@ -41,6 +41,7 @@
             <div class="modal-dialog modalLogin">
                 <div class="modal-content">
                         <div class="login-box">
+                            <button type="button" class="btn-close btn-close-white pull-right" data-bs-dismiss="modal" aria-label="Close"></button>
                             <h2>Iniciar Sesión</h2>
                             <form>
                                 <div class="user-box">
@@ -70,39 +71,9 @@
         <!-- MODAL REGISTRO -->
         <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content modalCaja">
-                    <!-- <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="row g-2">
-                            <div class="col-md-6">
-                                <label for="validationDefault01" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="validationDefault01" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="validationDefault02" class="form-label">Apellido</label>
-                                <input type="text" class="form-control" id="validationDefault02" required>
-                            </div>
-                            <div class="col-12">
-                                <label for="validationDefaultUsername" class="form-label">Correo Electrónico</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <label for="validationDefaultPassword" class="form-label">Contraseña</label>
-                                <div class="input-group">
-                                    <input type="password" class="form-control" id="validationDefaultPassword"  aria-describedby="inputGroupPrepend2" required>
-                                </div>
-                            </div>
-                            <div class="d-grid col-6 mx-auto mt-3">
-                                <button class="btn btn-primary" type="submit">Registrarme</button>
-                            </div>
-                        </form>
-                    </div> -->
+                <div class="modal-content">
                     <div class="login-box">
+                        <button type="button" class="btn-close btn-close-white pull-right" data-bs-dismiss="modal" aria-label="Close"></button>
                         <h2>Registrarse</h2>
                         <form>
                             <div class="usuario-box col-12">
@@ -139,7 +110,7 @@
             <div class="modal-dialog modal-xl">
                 <div class="modal-content modalCaja">
                     <div class="modal-body">
-                        <button type="button" class="btn-close pull-right" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-close-white pull-right" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="modal-caja col-12">
                             <div class="modal-contacto col">
                                 <h1>Contacto</h1>
@@ -383,173 +354,7 @@
             <!-- FIN SECCION ESTUDIOS -->
 
             <!-- SECCION HARD & SOFT SKILLS -->
-            <section class="seccion-skills container">
-                <h1 class="titulo-skills">Mis Skills</h1>
-                <div id="carouselExampleControls" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <!-- Skill HTML -->
-                        <div class="carousel-item active">
-                            <div class="caja-carrusel">
-                                <div class="imagenSkills">
-                                    <img src="imagenes/html.png" class="d-block" alt="...">
-                                </div>
-                                <div class="progreso">
-                                    <div class="card">
-                                        <div class="box">
-                                            <div class="porcent">
-                                                <svg>
-                                                    <circle cx="70" cy="70" r="70"/>
-                                                    <circle cx="70" cy="70" r="70"/>
-                                                </svg>
-                                                <div class="number">
-                                                    <h2>80<span>%</span></h2>
-                                                </div>
-                                                <h3 class="text">HTML</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Skill CSS -->
-                        <div class="carousel-item">
-                            <div class="caja-carrusel">
-                                <div class="imagenSkills">
-                                    <img src="imagenes/css.png" class="d-block" alt="...">
-                                </div>
-                                <div class="progreso">
-                                    <div class="card">
-                                        <div class="box">
-                                            <div class="porcent">
-                                                <svg>
-                                                    <circle cx="70" cy="70" r="70"/>
-                                                    <circle cx="70" cy="70" r="70"/>
-                                                </svg>
-                                                <div class="number">
-                                                    <h2>70<span>%</span></h2>
-                                                </div>
-                                                <h3 class="text">CSS</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Skill JAVASCRIPT -->
-                        <div class="carousel-item">
-                            <div class="caja-carrusel">
-                                <div class="imagenSkills">
-                                    <img src="imagenes/javascript.png" class="d-block" alt="">
-                                </div>
-                                <div class="progreso">
-                                    <div class="card">
-                                        <div class="box">
-                                            <div class="porcent">
-                                                <svg>
-                                                    <circle cx="70" cy="70" r="70"/>
-                                                    <circle cx="70" cy="70" r="70"/>
-                                                </svg>
-                                                <div class="number">
-                                                    <h2>50<span>%</span></h2>
-                                                </div>
-                                                <h3 class="text">JAVASCRIPT</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Skill ANGULAR -->
-                        <div class="carousel-item">
-                            <div class="caja-carrusel">
-                                <div class="imagenSkills">
-                                    <img src="imagenes/angular.png" class="d-block" alt="">
-                                </div>
-                                <div class="progreso">
-                                    <div class="card">
-                                        <div class="box">
-                                            <div class="porcent">
-                                                <svg>
-                                                    <circle cx="70" cy="70" r="70"/>
-                                                    <circle cx="70" cy="70" r="70"/>
-                                                </svg>
-                                                <div class="number">
-                                                    <h2>50<span>%</span></h2>
-                                                </div>
-                                                <h3 class="text">ANGULAR</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Skill JAVA -->
-                        <div class="carousel-item">
-                            <div class="caja-carrusel">
-                                <div class="imagenSkills">
-                                    <img src="imagenes/java.png" class="d-block" alt="">
-                                </div>
-                                <div class="progreso">
-                                    <div class="card">
-                                        <div class="box">
-                                            <div class="porcent">
-                                                <svg>
-                                                    <circle cx="70" cy="70" r="70"/>
-                                                    <circle cx="70" cy="70" r="70"/>
-                                                </svg>
-                                                <div class="number">
-                                                    <h2>10<span>%</span></h2>
-                                                </div>
-                                                <h3 class="text">JAVA</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Skill MySQL -->
-                        <div class="carousel-item">
-                            <div class="caja-carrusel">
-                                <div class="imagenSkills">
-                                    <img src="imagenes/mysql.png" class="d-block" alt="">
-                                </div>
-                                <div class="progreso">
-                                    <div class="card">
-                                        <div class="box">
-                                            <div class="porcent">
-                                                <svg>
-                                                    <circle cx="70" cy="70" r="70"/>
-                                                    <circle cx="70" cy="70" r="70"/>
-                                                </svg>
-                                                <div class="number">
-                                                    <h2>50<span>%</span></h2>
-                                                </div>
-                                                <h3 class="text">MySQL</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </section>
+            
             <!-- FIN SECCION HARD & SOFT SKILLS -->
             
             <!-- SECCION PROYECTOS -->
@@ -561,20 +366,30 @@
                             <div class="panel">
                                 <a href="#">
                                     <img src="imagenes/portfolio.png" alt="">
-                                    <div class="tituloPanel">
-                                        <h3>Portfolio Web</h3>
-                                        <h5>Como empezó mi Portfolio Web</h5>
+                                    <div class="cajaTexto">
+                                        <h2>Portfolio Web</h2>
+                                        <p>
+                                            Este portfolio lo realice en el curso de Argentina Programa #YoProgramo y es la pagina en la que estas ahora mismo. 
+                                            Fue una buena experiencia y un buen aprendizaje en donde pude volcar todo lo aprendido.
+                                            El stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, Javascript, Angular, Spring Boot, Java, MySQL, Heroku. 
+                                        </p>
+                                        <h6>Año: 2022</h6>
                                     </div>
+                                </div>
                                 </a>
-                            </div>
+                                
                         </li>
                         <li>
                             <div class="panel">
                                 <a href="#">
                                     <img src="imagenes/sitioweb.png" alt="">
-                                    <div class="tituloPanel">
-                                        <h3>Portfolio Web</h3>
-                                        <h5>Como empezó mi Portfolio Web</h5>
+                                    <div class="cajaTexto">
+                                        <h2>Primer Sitio Web</h2>
+                                        <p>
+                                            Este sitio web lo diseñé en un curso de Diseñador Web. Es como una página en donde hay info
+                                            sobre mí. Fue desarollada a modo de práctica y el stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, JavaScript.
+                                        </p>
+                                        <h6>Año: 2021</h6>
                                     </div>
                                 </a>
                             </div>
@@ -583,9 +398,15 @@
                             <div class="panel">
                                 <a href="#">
                                     <img src="imagenes/Simon.png" alt="">
-                                    <div class="tituloPanel">
-                                        <h3>Portfolio Web</h3>
-                                        <h5>Como empezó mi Portfolio Web</h5>
+                                    <div class="cajaTexto">
+                                        <h2>Juego - Simón</h2>
+                                        <p>
+                                            Este proyecto es de un juego que desarrollé junto a un grupo de amigos en la facultad, el nombre del 
+                                            grupo era Vulgary. Este juego es una versión digital del famoso juego electrónico Simon creado 
+                                            por Ralph Baer y Howard J. Morrison, su interfaz es simple ya que esta desarrollado para consola 
+                                            utilizando el lenguaje Python. Fue una linda experiencia de trabajo en equipo y creatividad.
+                                        </p>
+                                        <h6>Año: 2016</h6>
                                     </div>
                                 </a>
                             </div>
@@ -594,59 +415,24 @@
                             <div class="panel">
                                 <a href="#">
                                     <img src="imagenes/aboutGH.png" alt="">
-                                    <div class="tituloPanel">
-                                        <h3>Portfolio Web</h3>
-                                        <h5>Como empezó mi Portfolio Web</h5>
+                                    <div class="cajaTexto">
+                                        <h2>Tarjeta de Presentación</h2>
+                                        <p>
+                                            Esta es una tarjeta de presentación web que diseñé en un curso de Diseñador Web.
+                                            El stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, JavaScript.
+                                        </p>
+                                        <h6>Año: 2021</h6>
                                     </div>
                                 </a>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div class="cajaTexto">
-                    <h2>Portfolio Web</h2>
-                    <p>
-                        Este portfolio lo realice en el curso de Argentina Programa #YoProgramo y es la pagina en la que estas ahora mismo. 
-                        Fue una buena experiencia y un buen aprendizaje en donde pude volcar todo lo aprendido.
-                        El stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, Javascript, Angular, Spring Boot, Java, MySQL, Heroku. 
-                    </p>
-                    <h6>Año: 2022</h6>
-                </div>
-                <div class="cajaTexto">
-                    <h2>Juego - Simón</h2>
-                    <p>
-                        Este proyecto es de un juego que desarrollé junto a un grupo de amigos en la facultad, el nombre del 
-                        grupo era Vulgary. Este juego es una versión digital del famoso juego electrónico Simon creado 
-                        por Ralph Baer y Howard J. Morrison, su interfaz es simple ya que esta desarrollado para consola 
-                        utilizando el lenguaje Python. Fue una linda experiencia de trabajo en equipo y creatividad.
-                    </p>
-                    <h6>Año: 2016</h6>
-                </div>
-                <div class="cajaTexto">
-                    <h2>Juego - Simón Matemático</h2>
-                    <p>
-                        Este proyecto es de un juego que desarrollé en la facultad, es una versión de Simon Matemático en donde  
-                        tienes que resolver operaciones matemáticas en un lapso de tiempo corto. Su interfaz es simple 
-                        ya que esta desarrollado para consola utilizando el lenguaje C. 
-                    </p>
-                    <h6>Año: 2017</h6>
-                </div>
-                <div class="cajaTexto">
-                    <h2>Tarjeta de Presentación</h2>
-                    <p>
-                        Esta es una tarjeta de presentación web que diseñé en un curso de Diseñador Web.
-                        El stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, JavaScript.
-                    </p>
-                    <h6>Año: 2021</h6>
-                </div>
-                <div class="cajaTexto">
-                    <h2>Primer Sitio Web</h2>
-                    <p>
-                        Este sitio web lo diseñé en un curso de Diseñador Web. Es como una página en donde hay info
-                        sobre mí. Fue desarollada a modo de práctica y el stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, JavaScript.
-                    </p>
-                    <h6>Año: 2021</h6>
-                </div>
+                
+                
+                
+                
+                
             </section>
             <!-- FIN SECCION PROYECTOS -->
         </main>
