@@ -188,21 +188,22 @@
         width: 80%;
     }
     #submit{
-        padding: 10px 10px 5px 15px;
-        font-size: 16px;
+        padding: 10px 10px 10px 8px;
+        font-size: 14px;
+        letter-spacing: 1px;
     }
     #register{
-        font-size: 14px;
+        font-size: 16px;
         margin: 0;
     }
     .login-box .usuario-box{
         display: block;
     }
     .login-box .user-box input{
-        font-size: 10px
+        font-size: 20px
     }
     .login-box .user-box label{
-        font-size: 18px;
+        font-size: 20px;
         top: -60px;
     }
 }
