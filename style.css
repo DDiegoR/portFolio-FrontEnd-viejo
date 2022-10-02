@@ -473,6 +473,10 @@ body::-webkit-scrollbar {
     font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
     font-size: 15px;
 }
+.activeBoton{
+    color:#0379D6;
+    border-color: #0379D6;
+}
 button{
     cursor: pointer;
     border: 0px;

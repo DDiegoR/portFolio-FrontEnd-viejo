@@ -41,18 +41,29 @@ function desplazarSeccionMenu(){
 // FIN MENU DESPLEGABLE DE BARRA DE NAVEGACION
 
 // EVENTOS BOTONES ESTUDIOS SECCION 2
+const botones = document.querySelectorAll(".botonEstudio");
+botones.forEach(boton => {
+    boton.addEventListener("click", () => {
+        removeActiveClassesBotones()
+        boton.classList.add('activeBoton')
+    })
+} )
+function removeActiveClassesBotones() {
+    botones.forEach(boton => {
+        boton.classList.remove('activeBoton')
+    })
+}
+
 function cambiaF(){
     document.getElementById("facultad").style.display = "block";
     document.getElementById("cursoDW").style.display = "none";
     document.getElementById("argentinaPrograma").style.display = "none";
 }
-
 function cambiaDW(){
     document.getElementById("facultad").style.display = "none";
     document.getElementById("cursoDW").style.display = "block";
     document.getElementById("argentinaPrograma").style.display = "none";
 }
-
 function cambiaAP(){
     document.getElementById("facultad").style.display = "none";
     document.getElementById("cursoDW").style.display = "none";
@@ -60,11 +71,11 @@ function cambiaAP(){
 }
 
 
+
 // SECCION PROYECTOS
 
 // CAJA IMAGENES 
 const panels = document.querySelectorAll('.panel')
-const titulos = document.querySelectorAll('.tituloProyecto');
 
 panels.forEach(panel => {
     panel.addEventListener('click', () => {
@@ -94,10 +105,10 @@ modal.addEventListener('show.bs.modal', function (event) {
     //
     // Actualizar el contenido del modal.
     if (recipient == "@ien") {  
-        imagen.src="../imagenes/tituloIEN.png";
+        imagen.src="imagenes/tituloIEN.png";
     }
     if (recipient == "@ap"){
-        imagen.src="../imagenes/ap.png";
+        imagen.src="imagenes/ap.png";
     }
 })
 
